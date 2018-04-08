@@ -14,15 +14,18 @@ Discussion               : http://www.shsforums.net/topic/56670-big-world-setup-
 
 Mod requests			 : Create a pull request or send a message 
 
+Support					 : Send PM to Roxanne at SHSForums.net or RoxanneSHS@mail.com
+
+
 ### Features ###
 
 - downloading mods (please see remarks!)
-- easy mod installation for BGT and EET
+- easy mod installation for EET
 - correct install order of mods/components 
 - handle mod and components conflicts
-- apply community fixes from [Big World Fixpack](https://github.com/BiGWorldProject/BiG-World-Fixpack)
+- apply community fixes from [Fixpack](https://github.com/BiGWorldProject/BiG-World-Fixpack)
 - easy backup creation/restoring
-- ability to add you own mods
+
 
 ### Supported games ###
 
