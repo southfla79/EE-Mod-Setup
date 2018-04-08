@@ -1,27 +1,18 @@
-**Issue reporting is closed:**  
-Since there is no active BWS code maintainer, there is no point reporting issues because there is no one who can fix them.  
-Community support: http://www.shsforums.net/topic/56670-big-world-setup-an-attempt-to-update-the-program/  
-Community support: https://forums.beamdog.com/discussion/44476/tool-big-world-setup-bws-mod-manager-for-baldurs-gate-enhanced-edition-trilogy-for-windows/p1  
-Mod requests: http://www.shsforums.net/topic/58006-big-world-setup-mod-request-template/  
+**EE game fork from BWS(old):**  
+
 
 **Big World Setup (BWS) : Mod Manager for Infinity Engine Games and Baldur's Gate/Enhanced Edition Trilogy by dabus**
 
-! Don't use BitBucket's web-interface to edit files because it doesn't save non-ANSI characters properly
 
-﻿**Download﻿**                 : https://bitbucket.org/BigWorldSetup/bigworldsetup/get/master.zip
+﻿**Download﻿**                 : https://github.com/RoxanneSHS/BWS-EE/archive/master.zip
 
-![gRmfnLY[1].png](https://bitbucket.org/repo/kKX5Xg/images/3720385461-gRmfnLY%5B1%5D.png)
-
-﻿**Download﻿**                 : https://bitbucket.org/BigWorldSetup/bigworldsetup/get/master.zip
+### Below are the links to the original BWS support material ###  
 
 Instruction/FAQ          : https://forums.beamdog.com/discussion/comment/704157
 
 Discussion               : http://www.shsforums.net/topic/56670-big-world-setup-an-attempt-to-update-the-program/
 
-Mod Request Template     : http://www.shsforums.net/topic/58006-big-world-setup-mod-request-template/
-
-Change History           : https://bitbucket.org/BigWorldSetup/bigworldsetup/commits/all
-
+Mod requests			 : Create a pull request or send a message 
 
 ### Features ###
 
@@ -35,24 +26,16 @@ Change History           : https://bitbucket.org/BigWorldSetup/bigworldsetup/com
 
 ### Supported games ###
 
-Active:  
 - Baldur's Gate: Enhanced Edition (standalone game)  
 - Baldur's Gate II: Enhanced Edition (standalone game)  
-- Enhanced Edition Trilogy ( BG1:EE + SoD + BG2:EE ) (planned: IWD1:EE + partial IWD2-in-EET)  
+- Enhanced Edition Trilogy EET( BG1:EE + SoD + BG2:EE )  
 - Planescape: Torment Enhanced Edition  
 - Icewind Dale: Enhanced Edition 
 
-Not maintained:  
-- Baldur's Gate 2 (classic standalone game)  
-- Baldur’s Gate Trilogy ( Classic BG1 + Classic BG2 )  
-- Icewind Dale  
-- Icewind Dale II   
-- Planescape: Torment  
- 
 
 ### Supported mods ###
 
-- Almost all of them! (use the Mod Request Template link above if there is a mod you want added)
+- All actively maintained or properly finished ones! (make a pull request if there is a mod you want added)
 
 ### Getting started ###
 
@@ -73,6 +56,3 @@ If you are in the middle of an installation, it is safest to use "Without Update
 * add mods/make other changes (see FAQ in the Docs folder of the BWS package!)
 * create a pull request to submit changes from your fork back to the main project
 
-### Contributors ###
-
-dabus(author), agb1, AL|EN, Quiet
