@@ -1,4 +1,4 @@
-###The EE Game Setup Tool ###
+### The EE Game Setup Tool ###
 
 **is a fork from Big World Setup (BWS old) : Mod Manager for Infinity Engine Games and Baldur's Gate/Enhanced Edition Trilogy by dabus**
 
