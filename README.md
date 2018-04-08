@@ -1,10 +1,10 @@
-**EE game fork from BWS(old):**  
+###The EE Game Setup Tool ###
+
+**is a fork from Big World Setup (BWS old) : Mod Manager for Infinity Engine Games and Baldur's Gate/Enhanced Edition Trilogy by dabus**
 
 
-**Big World Setup (BWS) : Mod Manager for Infinity Engine Games and Baldur's Gate/Enhanced Edition Trilogy by dabus**
+﻿**Download﻿**             : https://github.com/RoxanneSHS/BWS-EE/archive/master.zip
 
-
-﻿**Download﻿**                 : https://github.com/RoxanneSHS/BWS-EE/archive/master.zip
 
 ### Below are the links to the original BWS support material ###  
 
