@@ -566,9 +566,6 @@ STD;iwdification;60;10;0111;
 MUC;EE_content_tweaks;Init;10;0111;
 MUC;EE_content_tweaks;0;10;0111;
 MUC;EE_content_tweaks;1;10;0000;
-MUC;w_packmule;Init;10;0111;
-MUC;w_packmule;2;10;0111;
-MUC;w_packmule;3;10;0000;
 ANN;--- item revisions v4 vs shamans---
 STD;item_rev;0;09;0001;
 STD;item_rev;1030;09;0111;
