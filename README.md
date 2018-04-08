@@ -5,6 +5,11 @@
 
 ﻿**Download﻿**             : https://github.com/RoxanneSHS/BWS-EE/archive/master.zip
 
+**Mod requests**		 : Create a pull request or send a message 
+
+**Support**				 : Send PM to Roxanne at SHSForums.net or RoxanneSHS@mail.com
+
+
 
 ### Below are the links to the original BWS support material ###  
 
@@ -12,9 +17,6 @@ Instruction/FAQ          : https://forums.beamdog.com/discussion/comment/704157
 
 Discussion               : http://www.shsforums.net/topic/56670-big-world-setup-an-attempt-to-update-the-program/
 
-Mod requests			 : Create a pull request or send a message 
-
-Support					 : Send PM to Roxanne at SHSForums.net or RoxanneSHS@mail.com
 
 
 ### Features ###
