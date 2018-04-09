@@ -48,7 +48,7 @@ Discussion               : http://www.shsforums.net/topic/56670-big-world-setup-
 1. Close any open games and game editors to avoid interference with the installation process
 2. Disable your antivirus (only while you are installing - don't forget to re-enable it after!)
 3. Disable User Account Control (if you don't do this, the automated installation can get stuck!)
-4. Execute "Start BiG World Setup" 
+4. Execute "Start EE Setup Tool.vbs" 
 
 
 ### How do I contribute? ###
