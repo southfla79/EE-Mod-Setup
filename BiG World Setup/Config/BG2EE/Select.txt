@@ -3,8 +3,6 @@ ANN;--- BWS starts in BG1EE folder if EET is selected, so all following lines un
 ANN;--- if EET is not selected, we use the Game.ini purge section to hide all the BG1EE-exclusive mods below ---
 ANN;--- special case section applicable to both BG1EE and BG2EE ---
 DWN;WeiDU;0;00;1111;
-DWN;weidu-filechangelog;0;00;1111;
-DWN;eekeeper;0;00;0000;
 ANN;--- patches ---
 DWN;BWInstallpack;0;00;1111;
 ANN;DWN;BWTrimpack;0;00;1111;
@@ -71,8 +69,6 @@ MUC;soa;Init;03;1111;
 MUC;soa;0;03;1111;
 ANN;soa #1 (BP-BGT-Worldmap variant) is not EET compatible, but is a BG1 mod, so we disable it
 ANN;MUC;soa;1;03;0000;
-ANN;Wedge's BGT Adventure Pack (wbgtap) Expert due to crashes - http://gibberlings3.net/forums/index.php?showtopic=27741&p=248203
-STD;wbgtap;1;03;0001;
 STD;karatur;0;03;0000;
 ANN;--- BGEE stores and items ---
 STD;bg1aerie;0;10;0000;
@@ -165,7 +161,6 @@ MUC;BG1NPCMusic;4;07;0000;
 MUC;BG1NPCMusic;5;07;0000;
 STD;IndiNPC;0;05;0111;
 STD;Mur'Neth;0;05;0111;
-STD;MulgoreXaviaNPC;0;05;0000;
 STD;coranbgfriend;0;07;1111;
 STD;FinchNPC;0;05;1111;
 STD;gavin;0;05;1111;
@@ -211,9 +206,6 @@ STD;verrsza;2;05;0000;
 ANN;sirene 8-9 = crossmod (after white/verrsza)
 STD;sirene;8;05;0111;
 STD;sirene;9;05;0111;
-STD;Huple_NPC;0;05;0000;
-STD;Huple_NPC;1;05;0000;
-ANN;-- BGEE Smaller NPCs --
 ANN;-- BGEE NPC-Related --
 STD;neera;0;07;1111;
 MUC;neera;Init;07;1111;
@@ -238,8 +230,6 @@ STD;garrick-tt;0;07;0111;
 STD;TenyaThermidor;0;05;0111;
 STD;Vynd;0;05;0000;
 STD;Drake;0;05;0000;
-ANN;--- saradas overwrites bcs files ---
-STD;saradas_magic;0;05;0000;
 ANN;--- misc tweaks ---
 MUC;A7-BanterAccelerator;Init;09;0000;
 MUC;A7-BanterAccelerator;10;09;0000;
@@ -289,11 +279,6 @@ MUC;kittomes;4;12;0000;
 MUC;kittomes;Init;12;0000;
 MUC;kittomes;5;12;0000;
 MUC;kittomes;6;12;0000;
-GRP;Stop
-ANN;--- smaller BGEE NPCs ---
-CMD;IF EXIST "jklhel\Helarine_BGEE.Tp2" REN "jklhel\Helarine_BGEE.Tp2" "jklhel.tp2"
-STD;JklHel;0;06;0000;
-STD;margarita;0;06;0000;
 ANN;--- BGEE item tweaks ---
 MUC;msfm;Init;10;0000;
 MUC;msfm;0;10;0000;
@@ -484,8 +469,8 @@ STD;Innershade;2;03;0000;
 STD;WhiteQueen;0;03;0000;
 STD;isnf;0;03;0000;
 STD;Eilistraee;0;03;0000;
-STD;FishingForTrouble;0;03;0111;
-STD;FishingForTrouble;1;03;0111;
+STD;FishingForTrouble;0;03;0000;
+STD;FishingForTrouble;1;03;0000;
 ANN;--- BG2EE tactical encounters ---
 STD;AzenMOD;0;08;0011;
 STD;AzenMOD;1;08;0011;
@@ -497,10 +482,6 @@ STD;impasylum;0;08;0011;
 STD;impasylum;1;08;0011;
 STD;impasylum;2;08;0011;
 STD;impasylum;3;08;0011;
-STD;PlanarSphereMod;0;08;0001;
-STD;PlanarSphereMod;1;08;0001;
-STD;PlanarSphereMod;2;08;0001;
-STD;PlanarSphereMod;3;08;0001;
 ANN;--- BG2EE stores and items ---
 STD;magestronghold_eet;0;03;0111;
 STD;BoM;0;10;0000;
@@ -551,9 +532,6 @@ SUB;StuffofTheMagi;0?2_2;10;0000;
 ANN;--- BG2EE NPCs ---
 STD;Amber_eet;0;05;0000;
 STD;Amber_eet;1;05;0000;
-ANN;--- BG2EE stores and items ---
-ANN:---WandCase now part of EETweaks---
-ANN;--- BG2EE NPCs ---
 SUB;ajantisbg2;0;05;0000;
 SUB;ajantisbg2;0?1_1;05;0000;
 SUB;ajantisbg2;0?1_2;05;0000;
@@ -621,7 +599,6 @@ STD;xulaye;1;05;0000;
 STD;xulaye;2;05;0000;
 STD;haldamir;0;05;0000;
 STD;xulaye_eet;0;05;0111;
-ANN;STD;AVIM;0;05;0000;
 STD;Saerileth;0;05;0000;
 STD;TyrisFlare;0;05;0000;
 SUB;Yvette;0;05;0000;
@@ -733,7 +710,6 @@ STD;TheUndying;1;05;0000;
 SUB;foundling;0;05;0000;
 SUB;foundling;0?1_1;05;0000;
 SUB;foundling;0?1_2;05;0000;
-STD;saradas_magic_2;0;05;0000;
 STD;deArnise;0;07;0111;
 STD;Chloe;0;05;0111;
 STD;Chloe;1;05;0111;
@@ -788,16 +764,7 @@ STD;Wings;2;07;0000;
 ANN;--- BG2EE minimods ---
 STD;lucy;0;04;0111;
 STD;slandor;0;04;0111;
-STD;derats_ogre;0;04;0000;
 ANN;--- BG2EE tweaks ---
-STD;DungeonBeGone;0;09;0000;
-STD;SkipChateauIrenicus;0;09;0000;
-MUC;SkipChateauIrenicus;Init;09;0000;
-MUC;SkipChateauIrenicus;101;09;0000;
-MUC;SkipChateauIrenicus;102;09;0000;
-STD;Teleport;0;09;0000;
-STD;Teleport;1;09;0000;
-ANN;mod is not maintained properly, thus expert
 STD;arestorationp;0;09;0000;
 STD;arestorationp;1;09;0000;
 STD;arestorationp;2;09;0000;
@@ -1000,7 +967,6 @@ STD;d0questpack;19;03;0111;
 STD;d0questpack;20;03;0111;
 STD;d0questpack;21;03;0111;
 STD;Turnabout;0;08;0000;
-STD;LongerRoad;0;05;0111;
 STD;LongerRoadEE;0;05;0111;
 STD;LongerRoadEE;1;05;0111;
 ANN;--- BG2EE minimods ---
@@ -1127,44 +1093,6 @@ STD;Px_Chantelame;0;12;0000;
 STD;duskblade;0;12;0000;
 STD;WarslingSniperKit;0;12;0000;
 STD;ArcaneArcher;0;12;0000;
-ANN;EE: Item Expansion
-ANN;STD;eldritch_magic;0;10;0000;
-ANN;Congenio's Pebble Collection (Ioun stone tweaks)
-ANN;STD;eldritch_magic;10;09;0000;
-ANN;MUC;eldritch_magic;Init;09;0000;
-ANN;XP Cap Removal -> Remove XP Cap (no limit)
-ANN;MUC;eldritch_magic;20;09;0000;
-ANN;XP Cap Removal -> Remove XP Cap (BGEE:SoD up to HLAs - not included)
-ANN;MUC;eldritch_magic;21;09;0000;
-ANN;START_XP - BGEE:SoD 161k & BG2EE 500k
-ANN;STD;eldritch_magic;30;09;0000;
-ANN;MUC;eldritch_magic;Init;09;0000;
-ANN;Remove Dual & Multi Class Restrictions -> Multiclass Humans & Dualclass Demihumans
-ANN;MUC;eldritch_magic;50;09;0000;
-ANN;Remove Dual & Multi Class Restrictions -> Multiclass Humans
-ANN;MUC;eldritch_magic;51;09;0000;
-ANN;Remove Dual & Multi Class Restrictions -> Dualclass Demihumans
-ANN;MUC;eldritch_magic;52;09;0000;
-ANN;Abyssal Warrior Kit
-ANN;STD;eldritch_magic;100;12;0000;
-ANN;Bladesinger Kit
-ANN;STD;eldritch_magic;200;12;0000;
-ANN;Eldritch Knight Kit
-ANN;STD;eldritch_magic;400;12;0000;
-ANN;Herbalist Kit
-ANN;STD;eldritch_magic;600;12;0000;
-ANN;Priest of Mystra Kit
-ANN;STD;eldritch_magic;900;12;0000;
-ANN;Priestess of Lolth Kit
-ANN;STD;eldritch_magic;1000;12;0000;
-ANN;Undead Hunter Kit (Paladin kit for Elves)
-ANN;STD;eldritch_magic;1200;12;0000;
-ANN;War Wizard Kit
-ANN;STD;eldritch_magic;1300;12;0000;
-ANN;Wilderness Runner Kit
-ANN;STD;eldritch_magic;1400;12;0000;
-ANN;Windrider Kit
-ANN;STD;eldritch_magic;1500;12;0000;
 ANN;--- test install for k9RoughWorld tweaks ---
 STD;k9RoughWorld;0;09;0001;
 STD;k9RoughWorld;1;09;0001;
@@ -1767,15 +1695,6 @@ ANN;BWFixpack disables pcvamp conditional patch (only if Weimer's Valen mod was 
 ANN;that patch resulted in several "WARNING: cannot find block matching [pcvamp/BCS/priest.bcs]"
 ANN;to solve this problem for now, BWFixpack has merged pcvamp's patch into the Valen mod itself
 STD;pcvamp;0;03;0000;
-STD;Derats_kits;0;12;0111;
-STD;Derats_kits;1;12;0111;
-STD;Derats_kits;2;12;0111;
-STD;Derats_kits;3;12;0111;
-STD;Derats_kits;4;12;0111;
-STD;Derats_kits;5;12;0111;
-STD;Derats_kits;6;12;0111;
-STD;Derats_kits;7;12;0000;
-STD;Derats_kits;8;12;0000;
 STD;BearWalker;0;12;0000;
 STD;Bodyguard;0;12;0000;
 STD;Bodyguard;1;12;0000;
@@ -2650,24 +2569,6 @@ MUC;xpmod;20;09;0000;
 MUC;xpmod;21;09;0000;
 STD;Isandir;0;13;0000;
 STD;Isandir;1;13;0000;
-MUC;A7NoEENPCs;Init;09;0000;
-MUC;A7NoEENPCs;1;09;0000;
-MUC;A7NoEENPCs;2;09;0000;
-MUC;A7NoEENPCs;3;09;0000;
-MUC;A7NoEENPCs;Init;09;0000;
-MUC;A7NoEENPCs;101;09;0000;
-MUC;A7NoEENPCs;201;09;0000;
-STD;A7NoEENPCs;102;09;0000;
-MUC;A7NoEENPCs;Init;09;0000;
-MUC;A7NoEENPCs;103;09;0000;
-MUC;A7NoEENPCs;203;09;0000;
-MUC;A7NoEENPCs;Init;09;0000;
-MUC;A7NoEENPCs;104;09;0000;
-MUC;A7NoEENPCs;204;09;0000;
-MUC;A7NoEENPCs;Init;09;0000;
-MUC;A7NoEENPCs;105;09;0000;
-MUC;A7NoEENPCs;205;09;0000;
-STD;A7NoEENPCs;301;09;0000;
 MUC;EET_Tweaks;Init;09;0000;
 MUC;EET_Tweaks;1000;09;0000;
 MUC;EET_Tweaks;1001;09;0000;
@@ -2895,12 +2796,6 @@ SUB;LightingPack;21?1_1;13;0000;
 SUB;LightingPack;21?2_0;13;0000;
 SUB;LightingPack;21?3_1;13;0000;
 SUB;LightingPack;21?4_y;13;0000;
-ANN;BG2EEGUITweaks not updated for 2.0+
-ANN;DWN;BG2EEGUITweaks;0;13;0111;
-ANN;DWN;BG2EEGUITweaksB;0;13;0111;
-ANN;DWN;BG2EEGUITweaksWE;0;13;0111;
-ANN;DWN;BG2EEGUITweaksFSWM;0;13;0111;
-ANN;DWN;BG2EEGUITweaksFSWMNM;0;13;0111;
 STD;recoloredbuttons;2;13;0111;
 STD;leui;0;13;0111;
 STD;leui;1;13;0000;
