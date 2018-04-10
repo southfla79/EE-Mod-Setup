@@ -21,13 +21,15 @@ Discussion               : http://www.shsforums.net/topic/56670-big-world-setup-
 
 ### Features ###
 
-- downloading mods (please see remarks!)
+- assistance for creating your own customized game with any number of mods 
+- downloading current versions of selected mods 
 - easy mod installation for EET
 - correct install order of mods/components 
 - handle mod and components conflicts
-- apply community fixes from [Fixpack](https://github.com/BiGWorldProject/BiG-World-Fixpack)
+- apply interim fixes from [Fixpack](https://github.com/BiGWorldProject/BiG-World-Fixpack) when needed.
 - easy backup creation/restoring
-- use player's tested compilation
+- use players' tested compilations
+- save your own compilations for re-use or sharing
 
 
 ### Supported games ###
@@ -41,7 +43,7 @@ Discussion               : http://www.shsforums.net/topic/56670-big-world-setup-
 
 ### Supported mods ###
 
-- All actively maintained or properly finished ones! (make a pull request if there is a mod you want added)
+- All actively maintained or properly completed ones! (make a pull request if there is a mod you want added)
 
 ### Getting started ###
 
