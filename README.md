@@ -27,6 +27,7 @@ Discussion               : http://www.shsforums.net/topic/56670-big-world-setup-
 - handle mod and components conflicts
 - apply community fixes from [Fixpack](https://github.com/BiGWorldProject/BiG-World-Fixpack)
 - easy backup creation/restoring
+- use player's tested compilation
 
 
 ### Supported games ###
@@ -49,6 +50,11 @@ Discussion               : http://www.shsforums.net/topic/56670-big-world-setup-
 2. Disable your antivirus (only while you are installing - don't forget to re-enable it after!)
 3. Disable User Account Control (if you don't do this, the automated installation can get stuck!)
 4. Execute "Start EE Setup Tool.vbs" 
+5. Select install language and game 
+6. Enter the game path(s) of the base game(s) you want to mod
+7. Go to the mod selection and either import a pre-selection from the *compilations* folder OR make your own free choice of the mods you want (you can also take a compilation as a starting point and adjust it to your liking)
+8. Use the *Back* button to leave mod selection - at this point you may be shown conflicts or problems you have in your selection and you can resolve those with the help provided in the menus
+9. When you have established a mod selection you are happy with *continue* and follow the instructions. 
 
 
 ### How do I contribute? ###
