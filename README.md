@@ -62,7 +62,7 @@ Discussion               : http://www.shsforums.net/topic/56670-big-world-setup-
 ### How do I contribute? ###
 
 * learn git basics (https://git-scm.com/videos https://git-scm.com/book/en/v2)
-* fork BWS repository using "SourceTree" or "SmartGit" or other preferred tool
-* add mods/make other changes (see FAQ in the Docs folder of the BWS package!)
+* fork the main project repository using "SourceTree" or "SmartGit" or other preferred tool
+* add mods/make other changes (see FAQ in the Docs folder of the download package!)
 * create a pull request to submit changes from your fork back to the main project
 
