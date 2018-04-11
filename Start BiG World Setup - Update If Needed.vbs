@@ -14,7 +14,7 @@ Else
     'WScript.Echo "Folder does not exist."
     WScript.Echo "BWS has an auto-update feature that will synchronize your local copy of BWS with the latest online version each time you run this script. This message will only be displayed once. If you want to disable the feature, rename the Git folder in Big World Setup\Tools."
     wshShell.Run """.\Git\bin\git.exe"" init .", 1, True
-	wshShell.Run """.\Git\bin\git.exe"" remote remove origin", 1, True
+    wshShell.Run """.\Git\bin\git.exe"" remote remove origin", 1, True
     wshShell.Run """.\Git\bin\git.exe"" remote add -f origin https://github.com/RoxanneSHS/BWS-EE", 1, True
     wshShell.Run """.\Git\bin\git.exe"" branch --track master origin/master", 1, True
     wshShell.Run """.\Git\bin\git.exe"" reset --hard origin/master", 1, True
