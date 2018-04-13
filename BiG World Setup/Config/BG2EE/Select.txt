@@ -545,6 +545,8 @@ SUB;ajantisbg2;0?2_4;05;0000;
 SUB;ajantisbg2;0?2_5;05;0000;
 SUB;ajantisbg2;0?3_1;05;0000;
 SUB;ajantisbg2;0?3_2;05;0000;
+STD;ajantisbg2;1;05;0000;
+STD;ajantisbg2;2;05;0000;
 ANN;ajantisportraitpack moved down
 STD;Kivan;100;05;0000;
 MUC;Kivan;Init;05;0000;
