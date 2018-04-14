@@ -26,7 +26,7 @@ Discussion               : http://www.shsforums.net/topic/56670-big-world-setup-
 - easy mod installation for EET
 - correct install order of mods/components 
 - handle mod and components conflicts
-- apply interim fixes from [Fixpack](https://github.com/BiGWorldProject/BiG-World-Fixpack) when needed.
+- apply interim fixes from [Fixpack](https://github.com/RoxanneSHS/FixpackEE/archive/master.zip) when needed.
 - easy backup creation/restoring
 - use players' tested compilations
 - save your own compilations for re-use or sharing
