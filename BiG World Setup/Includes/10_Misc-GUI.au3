@@ -21,12 +21,12 @@ EndFunc   ;==>_Misc_SetGConfDir
 ; Displays the about-screen
 ; ---------------------------------------------------------------------------------------------
 Func _Misc_AboutGUI()
-	Local $String = 'BiG World Setup', $Version
+	Local $String = 'Big World Setup', $Version
 	Local $Current = GUICtrlRead($g_UI_Seperate[0][0]) + 1
 	; ---------------------------------------------------------------------------------------------
 	; Fetch the version number
 	; ---------------------------------------------------------------------------------------------
-	Local $Array = StringSplit(StringStripCR(FileRead($g_ProgDir & '\Docs\Changelog.txt')), @LF)
+	Local $Array = StringSplit(StringStripCR(FileRead($g_BaseDir & '\Documentation\Changelog.txt')), @LF)
 	For $a = $Array[0] To 1 Step -1
 		If StringRegExp($Array[$a], '\A\d{8,}') Then
 			$Version = StringRegExp($Array[$a], '\A\d{8,}', 3)
@@ -515,7 +515,7 @@ Func _Misc_SetAvailableSelection()
 ;		If $g_Flags[14] = 'BWS' Then
 ;			$InstallType = $Split[1]; => first custom pre-selection as default
 ;		Else
-			$InstallType = $SplitD[1]; => 'recommended' pre-selection as default (#1 is minimal, #2 is recommended)
+			$InstallType = $SplitD[2]; => 'recommended' pre-selection as default (#1 is minimal, #2 is recommended)
 ;		EndIf
 	ElseIf StringLen($InstallType) = 1 Then; last user selection was one of the default pre-selections
 		If $InstallType > UBound($SplitD) - 1 Then $InstallType = 1
@@ -807,7 +807,7 @@ Func _Misc_SwitchGUIToInstallMethod()
 		EndIf
 	Next
 	If $found = 0 Then
-		_PrintDebug('There is a problem with the internal configuration files. The BWS\Config\User.ini indicates that your current game type is "'&$g_Flags[14]&'" but no matching configuration was found. Please try restarting BWS using "with updates" to get the latest files; if that fails, please report this problem on one of the BiG World Setup support forums.', 1)
+		_PrintDebug('There is a problem with the internal configuration files. The BWS\Config\User.ini indicates that your current game type is "'&$g_Flags[14]&'" but no matching configuration was found. Please try restarting BWS using "with updates" to get the latest files; if that fails, please report this problem on one of the Big World Setup support forums.', 1)
 		Exit
 	EndIf
 	_Misc_Set_GConfDir($g_GameList[$g][0])
