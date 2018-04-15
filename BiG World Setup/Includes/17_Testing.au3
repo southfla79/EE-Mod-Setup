@@ -120,7 +120,7 @@ Func _Test_GetGamePath($p_Game, $p_Force=0)
 		$Files=_FileSearch($SearchDir, '*')
 		For $f=1 to $Files[0]
 			If Not StringInStr(FileGetAttrib($SearchDir & '\' & $Files[$f]), 'D') Then ContinueLoop
-			If StringInStr($Files[$f], 'BiG World Clean Install') Then ContinueLoop
+			If StringInStr($Files[$f], 'Big World Clean Install') Then ContinueLoop
 			If FileExists($SearchDir & '\' & $Files[$f] & '\'&$Game[$g][3]) Then
 				If FileExists($SearchDir & '\' & $Files[$f] &'\Data\00766') Then $Files[$f]=$Files[$f] &'\Data\00766'; BG1EE
 				If FileExists($SearchDir & '\' & $Files[$f] &'\Data\00806') Then $Files[$f]=$Files[$f] &'\Data\00806'; BG1EE SoD
@@ -175,7 +175,7 @@ EndFunc    ;==>_Test_ACP
 ; ---------------------------------------------------------------------------------------------
 Func _Test_ArchivesExist()
 	_PrintDebug('+' & @ScriptLineNumber & ' Calling _Test_ArchivesExist')
-	$g_LogFile = $g_LogDir & '\BiG World Checking Debug.txt'
+	$g_LogFile = $g_LogDir & '\BWS-Debug-FileCheck.txt'
 	Local $Prefixes[3], $Fault = '';, $Delete = 0
 	Local $Message = IniReadSection($g_TRAIni, 'TE-ArchivesExist')
 	GUICtrlSetData($g_UI_Interact[6][4], _GetSTR($Message, 'H1')); => help text
@@ -274,8 +274,8 @@ Func _Test_ArchivesExist()
 ;			EndIf
 ;		ElseIf $Keep = 'm' Then; move files
 ;			If Not FileExists($g_RemovedDir) Then DirCreate($g_RemovedDir)
-;			DirMove($g_DownDir & '\Not Valid', $g_RemovedDir & '\BiG World Downloads-'&@YEAR&@MON&@MDAY, 1)
-;			_Process_SetScrollLog(StringFormat(_GetTR($Message, 'L16'), $g_RemovedDir & '\BiG World Downloads-'&@YEAR&@MON&@MDAY)); => files can be found at X
+;			DirMove($g_DownDir & '\Not Valid', $g_RemovedDir & '\Big World Downloads-'&@YEAR&@MON&@MDAY, 1)
+;			_Process_SetScrollLog(StringFormat(_GetTR($Message, 'L16'), $g_RemovedDir & '\Big World Downloads-'&@YEAR&@MON&@MDAY)); => files can be found at X
 ;		Else; restore files
 ;			FileMove($g_DownDir & '\Not Valid\*.*', $g_DownDir & '\')
 ;		EndIf
