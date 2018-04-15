@@ -7,7 +7,7 @@
 
 **Mod requests**		 : Create a pull request or send a message 
 
-**Support**				 : Send PM to Roxanne at SHSForums.net or RoxanneSHS@mail.com
+**Support**				 : http://gibberlings3.net/forums/index.php?showtopic=29337&hl=
 
 
 
