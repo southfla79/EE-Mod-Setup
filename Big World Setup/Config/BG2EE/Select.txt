@@ -46,12 +46,12 @@ STD;bgeetextpack;0;01;1111;
 STD;bgeetextpack;1;01;1111;
 ANN;--- "BG1EE big mods" ---
 STD;DarkHorizonsBGee;0;02;0011;
-MUC;drizztsaga;Init;02;0000;
-MUC;drizztsaga;0;02;0000;
+MUC;drizztsaga;Init;02;1111;
+MUC;drizztsaga;0;02;1111;
 ANN;drizztsaga #1 (BP-BGT-Worldmap variant) is not EET compatible, and is a BG1 mod, so we disable it
 ANN;MUC;drizztsaga;1;02;0000;
 ANN;drizztsaga #2 (change XP cap) is pointless before EET
-STD;drizztsaga;3;02;0000;
+STD;drizztsaga;3;02;1111;
 CMD;echo.>> Worldmap/map_mods_links.tbl;;;;D:drizztsaga(1)
 ANN;--- BGEE quests ---
 STD;bgqe;0;03;1111;
