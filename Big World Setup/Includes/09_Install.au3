@@ -124,7 +124,7 @@ Func Au3RunFix($p_Num = 0)
 	;	FileWrite($g_LogFile, '>EET-patches-for-BG2EE-mods-master\* .' & @CRLF)
 	;	_Extract_MoveModEx('EET-patches-for-BG2EE-mods-master')
 	;EndIf
-	_Extract_OverwriteFiles()
+	;_Extract_OverwriteFiles()
 ; ---------------------------------------------------------------------------------------------
 ; make sure the WeiDU-setups are really replaced by a new one
 ; ---------------------------------------------------------------------------------------------
