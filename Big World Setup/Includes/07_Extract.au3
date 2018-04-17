@@ -951,20 +951,3 @@ Func _FileListToArrayEx($sPath, $sFilter = "*", $iFlag = 0)
     Return StringSplit(StringTrimLeft($sFileList, 1), "|")
 EndFunc    ;==>_FileListToArrayEx
 
-; ---------------------------------------------------------------------------------------------
-; If there are files in a directory in the BWS folder named OverwriteFiles\<current game type>\
-; then copy those files to the current game folder, overwriting any existing files there
-; ---------------------------------------------------------------------------------------------
-Func _Extract_OverwriteFiles()
-	If $g_Flags[14] = 'BWS' Then
-		Local $gameType = 'BWP'
-	Else
-		Local $gameType = $g_Flags[14]
-	EndIf
-	Local $overwriteDir = $g_BaseDir&'\'&'OverwriteFiles'&'\'&$gameType
-    Local $Success = 0
-    Local $ProcID = Run(@ComSpec & ' /c xcopy /H /Y /C /Q /R /E "' & $overwriteDir & '" "' & $g_GameDir & '"', "", @SW_HIDE)
-    Do
-        Sleep(100)
-    Until NOT ProcessExists($ProcID)
-EndFunc    ;==>_Extract_OverwriteFiles
