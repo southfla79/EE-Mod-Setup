@@ -26,18 +26,18 @@ Else
     End If
   Else
 	Set wshShell = WScript.CreateObject ("wscript.shell")
-    wshShell.Run "%comspec% /k XCOPY /S /Q /Y /I ""Big World Setup\Tools\Git"" "".\Git"" & exit", 2, True
+    wshShell.Run "%comspec% /k XCOPY /S /Q /Y /I ""Big World Setup\Tools\Git"" "".\Git"" & exit", 1, True
     WScript.Echo "Application has an autoupdate feature that will synchronize your local copy with the latest online version each time you run this script." & _
                  "Applicaion will not update any files between mods installation. This message will only be displayed once."
-    wshShell.Run """.\Git\cmd\git.exe"" init .", 2, True
-    wshShell.Run """.\Git\cmd\git.exe"" remote add -f origin https://github.com/RoxanneSHS/BWS-EE", 2, True
-    wshShell.Run """.\Git\cmd\git.exe"" branch --track master origin/master", 2, True
-    wshShell.Run """.\Git\cmd\git.exe"" reset --hard origin/master", 2, True
+    wshShell.Run """.\Git\cmd\git.exe"" init .", 1, True
+    wshShell.Run """.\Git\cmd\git.exe"" remote add -f origin https://github.com/RoxanneSHS/BWS-EE", 1, True
+    wshShell.Run """.\Git\cmd\git.exe"" branch --track master origin/master", 1, True
+    wshShell.Run """.\Git\cmd\git.exe"" reset --hard origin/master", 1, True
 	Set wshShell = nothing
   End If
   Set wshShell = WScript.CreateObject ("wscript.shell")
   commandDefinition = "%comspec% /c ""Big World Setup\Tools\Git\cmd\git.exe""" & " " & "log --pretty=oneline --abbrev-commit --abbrev=7 -n 1" & " > " & "BWS-EE-Version.txt"
-  wshShell.Run commandDefinition, 2, True
-  wshShell.Run """Big World Setup\Tools\AutoIt3.exe"" ""Big World Setup\Big World Setup.au3""", 2, True
+  wshShell.Run commandDefinition, 1, True
+  wshShell.Run """Big World Setup\Tools\AutoIt3.exe"" ""Big World Setup\Big World Setup.au3""", 1, True
   Set wshShell = nothing
 End If
