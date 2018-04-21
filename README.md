@@ -4,9 +4,9 @@
 
 **Download**             : https://github.com/RoxanneSHS/BWS-EE/archive/master.zip
 
-**Mod requests**		 : Create a pull request or send a message
+**Mod requests**		 : Create a pull request or http://gibberlings3.net/forums/index.php?showtopic=29337&hl=
 
-**Support**				 : Send PM to Roxanne at SHSForums.net or RoxanneSHS@mail.com
+**Support**				 : http://gibberlings3.net/forums/index.php?showtopic=29337&hl=
 
 ### Below are the links to the original BWS support material ###
 
@@ -21,7 +21,7 @@ Discussion               : http://www.shsforums.net/topic/56670-big-world-setup-
 - easy mod installation for EET
 - correct install order of mods/components
 - handle mod and components conflicts
-- apply interim fixes from [Fixpack](https://github.com/RoxanneSHS/BWS-EE-Fixpack/archive/master.zip) when needed.
+- apply interim fixes when needed.
 - easy backup creation/restoring
 - use players' tested compilations
 - save your own compilations for re-use or sharing
@@ -44,8 +44,8 @@ Discussion               : http://www.shsforums.net/topic/56670-big-world-setup-
 2. Close any open games and game editors to avoid interference with the installation process
 3. Disable your antivirus (only while you are installing - don't forget to re-enable it after!)
 4. Disable User Account Control (if you don't do this, the automated installation can get stuck!)
-5. Execute "BWS-EE.vbs"
-6. Select install language and game
+5. Execute "Start BWS-EE Setup.vbs" Note: If you reuse the tool and you kept the previously downloaded mods stored, you can use "Update BWS-EE Setup.vbs" to renew instead of having to download the tool and valid mods once again. 
+6. Select game to be modded.
 7. Enter the game path(s) of the base game(s) you want to mod
 8. Go to the mod selection and either import a pre-selection from the *compilations* folder OR make your own free choice of the mods you want (you can also take a compilation as a starting point and adjust it to your liking)
 9. Use the *Back* button to leave mod selection - at this point you may be shown conflicts or problems you have in your selection and you can resolve those with the help provided in the menus
