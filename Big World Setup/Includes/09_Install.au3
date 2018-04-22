@@ -158,7 +158,7 @@ Func Au3RunFix($p_Num = 0)
 		_Misc_MsgGUI(4, _GetTR($g_UI_Message, '0-T1'), _GetTR($Message, 'L9')&'||'& StringFormat(_GetTR($Message, 'L11'), $Type, $Site, $g_GameDir&'\WeiDU\WeiDU.exe')); => need extracted WeiDU-archive
 		Exit
 	EndIf
-	If Not StringInStr(FileRead($g_GameDir&'\WeiDU.log'), 'BWS.tp2') Then
+	If Not StringInStr(FileRead($g_GameDir&'\WeiDU.log'), 'BWS-EE.tp2') Then
 		$Array=StringSplit(StringStripCR(FileRead($g_BaseDir & '\Documentation\Changelog-Mods.txt')), @LF); read the version-number from the changelog
 		For $a=$Array[0] to 1 Step -1
 			If StringRegExp($Array[$a], '\A\d') Then
@@ -930,8 +930,8 @@ Func _Install_CreateTP2Entry($p_Setup, $p_Text, $p_Process=1, $p_File=''); $a=tp
 			If UBound($BWS_ver) Then $BWS_ver = 'BWS version ' & $BWS_ver & ', '
 			FileClose($Handle)
 		EndIf
-		RunWait(@ComSpec&' /c echo BEGIN ~'&$p_Text&' ('&$BWS_ver&'installation started %DATE%)~ >> Setup-BWS.tp2', $g_gameDir, @SW_HIDE)
-	Else ;important assumption -- Setup-BWS.tp2 will never have $p_File <> '' -- if it does, this function needs rewrite
+		RunWait(@ComSpec&' /c echo BEGIN ~'&$p_Text&' ('&$BWS_ver&'installation started %DATE%)~ >> Setup-BWS-EE.tp2', $g_gameDir, @SW_HIDE)
+	Else ;important assumption -- Setup-BWS-EE.tp2 will never have $p_File <> '' -- if it does, this function needs rewrite
 		FileWriteLine($Handle, 'BEGIN "'&$p_Text&'"')
 		If $p_File <> '' Then FileWriteLine($Handle, 'AT_NOW ~'&$p_File&'~'); execute this windows-command
 		FileClose($Handle)
