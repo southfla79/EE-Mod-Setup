@@ -21,12 +21,12 @@ EndFunc   ;==>_Misc_SetGConfDir
 ; Displays the about-screen
 ; ---------------------------------------------------------------------------------------------
 Func _Misc_AboutGUI()
-	Local $String = 'Big World Setup', $Version
+	Local $String = 'EE Game Setup', $Version
 	Local $Current = GUICtrlRead($g_UI_Seperate[0][0]) + 1
 	; ---------------------------------------------------------------------------------------------
 	; Fetch the version number
 	; ---------------------------------------------------------------------------------------------
-	Local $Array = StringSplit(StringStripCR(FileRead($g_BaseDir & '\Documentation\Changelog.txt')), @LF)
+	Local $Array = StringSplit(StringStripCR(FileRead($g_BaseDir & '\BWS-EE-Version.txt')), @LF)
 	For $a = $Array[0] To 1 Step -1
 		If StringRegExp($Array[$a], '\A\d{8,}') Then
 			$Version = StringRegExp($Array[$a], '\A\d{8,}', 3)
