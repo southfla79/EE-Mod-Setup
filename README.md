@@ -4,7 +4,9 @@
 
 **Download**             : https://github.com/BWS-EESetup/BWS-EE/archive/master.zip
 
-**Mod requests**		 : Create a pull request or http://gibberlings3.net/forums/index.php?showtopic=29337&hl=
+**Mod requests**		 : Create a pull request 
+
+**Contribute Compilation** : Create a pull request with an ini file or weidu.log(s)
 
 **Support**				 : http://gibberlings3.net/forums/index.php?showtopic=29337&hl=
 
