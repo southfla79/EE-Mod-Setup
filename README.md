@@ -1,6 +1,6 @@
 ### The EE Game Setup Tool ###
 
-**is a fork from Big World Setup (BWS old) : Mod Manager for Infinity Engine Games and Baldur's Gate/Enhanced Edition Trilogy by dabus**
+**is a fork from Big World Setup (BWS) : Mod Manager for Infinity Engine Games and Baldur's Gate/Enhanced Edition Trilogy by dabus**
 
 **Download**             : https://github.com/BWS-EESetup/BWS-EE/archive/master.zip
 
@@ -42,7 +42,7 @@ Discussion               : http://www.shsforums.net/topic/56670-big-world-setup-
 
 ### Getting started ###
 
-1. Download Big World Setup zip archive and extract it anywhere you want (but not in your game folder!)
+1. Download application zip archive and extract it anywhere you want (but not in your game folder!)
 2. Close any open games and game editors to avoid interference with the installation process
 3. Disable your antivirus (only while you are installing - don't forget to re-enable it after!)
 4. Disable User Account Control (if you don't do this, the automated installation can get stuck!)
