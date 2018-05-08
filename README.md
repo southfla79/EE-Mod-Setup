@@ -8,7 +8,7 @@
 
 **Contribute Compilation** : Create a pull request with an ini file or weidu.log(s)
 
-**Support**				 : http://gibberlings3.net/forums/index.php?showtopic=29337&hl=
+**Support**				 : https://baldursextendedworld.com/Install-Tool/
 
 ### Below are the links to the original BWS support material ###
 
