@@ -431,7 +431,7 @@ Func _Tree_Populate($p_Show=1)
 				; 0x1a8c14 lime = recommended / 0x000070 dark = standard / 0xe8901a = tactics / 0xad1414 light = expert / checkbox-default = 0x1c5180
 				If StringInStr($g_CentralArray[$g_TreeviewItem[$cs][0]][11], 'R') Then
 					If $g_Flags[14]='BWP' Then $Type='1111'; set defaults for batch install
-					GUICtrlSetColor($g_TreeviewItem[$cs][0], 0x1a8c14); lime foreground = recommended
+					GUICtrlSetColor($g_TreeviewItem[$cs][0], 0x000070); dark foreground = recommended
 				ElseIf StringInStr($g_CentralArray[$g_TreeviewItem[$cs][0]][11], 'S') Then
 					If $g_Flags[14]='BWP' Then $Type='0111'; set defaults for batch install
 					GUICtrlSetColor($g_TreeviewItem[$cs][0], 0x000070); dark foreground = stable
