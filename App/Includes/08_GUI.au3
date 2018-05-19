@@ -97,11 +97,6 @@ Func Au3BuildGUI($p_Num = 0)
 ; ---------------------------------------------------------------------------------------------
 #Region Backup - TAB
 	$g_UI_Seperate[3][0] = GUICtrlCreateTabItem('Backup')
-	$g_UI_Seperate[3][1] = GUICtrlCreateGroup('', 15, 60, 400, 200); backup group
-	GUICtrlSetFont(-1, 8, 800, 0, 'MS Sans Serif')
-	$g_UI_Static[3][1] = GUICtrlCreateLabel('', 30, 90, 370, 50)
-	$g_UI_Button[3][1] = GUICtrlCreateButton('', 30, 160, 175, 20, 0); create backup
-	$g_UI_Button[3][2] = GUICtrlCreateButton('', 225, 160, 175, 20, 0); restore backup
 	GUICtrlCreateGroup("", -99, -99, 1, 1)
 	$g_UI_Seperate[3][2] = GUICtrlCreateGroup('', 15, 275, 400, 135); advanced group
 	GUICtrlSetFont(-1, 8, 800, 0, 'MS Sans Serif')

@@ -387,10 +387,10 @@ Func _Backup_Test($p_Game)
 	If FileExists($g_BackupDir&'\'&$Game[$g][1]&'.exe') And $IsInstalled = 0 Then
 		Return 0
 	ElseIf FileExists($g_BackupDir&'\'&$Game[$g][1]&'.exe') And $IsInstalled = 1 Then
-		Return 1
+		Return 0
 	ElseIf Not FileExists($g_BackupDir) And $IsInstalled = 0 Then
-		Return 2
+		Return 0
 	ElseIf Not FileExists($g_BackupDir) And $IsInstalled = 1 Then
-		Return 3
+		Return 0
 	EndIf
 EndFunc   ;==>_Backup_Test
