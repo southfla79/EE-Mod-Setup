@@ -12,8 +12,6 @@
 
 ### Below are the links to the original BWS support material ###
 
-Instruction/FAQ          : https://forums.beamdog.com/discussion/comment/704157
-
 Discussion               : http://www.shsforums.net/topic/56670-big-world-setup-an-attempt-to-update-the-program/
 
 ### Features ###
