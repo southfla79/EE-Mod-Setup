@@ -136,9 +136,6 @@ Func Au3BuildGUI($p_Num = 0)
 	GUICtrlSetFont(-1, 8, 400, 0, "Arial")
 	GUICtrlSetBkColor(-1, 0xFFFFFF)
 	$g_UI_Static[4][2] = GUICtrlCreateLabel('', 15, 60, 75, 20, BitOR($SS_Left, $SS_CENTERIMAGE)); options
-	$g_UI_Static[4][3] = GUICtrlCreateLabel('', 175, 60, 75, 20, BitOR($SS_CENTER, $SS_CENTERIMAGE)); add
-	$g_UI_Static[4][4] = GUICtrlCreateLabel('', 250, 60, 75, 20, BitOR($SS_CENTER, $SS_CENTERIMAGE)); remove
-	$g_UI_Static[4][5] = GUICtrlCreateLabel('', 325, 60, 75, 20, BitOR($SS_CENTER, $SS_CENTERIMAGE)); mark
 	For $s=2 to 5
 		GUICtrlSetCursor($g_UI_Static[4][$s], 0)
 		GUICtrlSetResizing($g_UI_Static[4][$s], 802)
@@ -595,13 +592,6 @@ Func Au3BuildGUI($p_Num = 0)
 	$g_UI_Menu[1][15] = GUICtrlCreateMenuItem('15', $g_UI_Menu[1][13]); administrate components
 	$g_UI_Menu[1][17] = GUICtrlCreateMenuItem('17', $g_UI_Menu[1][13]); administrate selection
 	$g_UI_Menu[1][18] = GUICtrlCreateMenuItem('18', $g_UI_Menu[1][13]); administrate dependencies
-; Creating basic add/remove/mark-entries
-	For $m=2 to 4
-		$g_UI_Menu[$m][0] = GUICtrlCreateContextMenu($g_UI_Static[4][$m+1]); context-menu
-		$g_UI_Menu[$m][1] = GUICtrlCreateMenu(0, $g_UI_Menu[$m][0]); special groups-menu
-		GUICtrlCreateMenuItem('', $g_UI_Menu[$m][0]); seperator
-		$g_UI_Menu[$m][2] = GUICtrlCreateMenuItem(0, $g_UI_Menu[$m][0]); all
-	Next
 ; Creating admin-options-menu
 	$g_UI_Menu[5][0] = GUICtrlCreateContextMenu($g_UI_Static[11][1]); >> option-menu
 	$g_UI_Menu[5][1] = GUICtrlCreateMenuItem('1', $g_UI_Menu[5][0]); New
