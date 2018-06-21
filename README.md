@@ -18,7 +18,8 @@
 - easy mod installation for EET
 - correct install order of mods/components
 - handle mod and components conflicts
-- apply interim fixes when needed.
+- apply interim fixes when needed
+- merge SoD DLC with BGEE if needed
 - use players' tested compilations
 - save your own compilations for re-use or sharing
 
