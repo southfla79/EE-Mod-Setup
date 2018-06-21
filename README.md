@@ -2,7 +2,7 @@
 
 **is a fork from Big World Setup (BWS) : Mod Manager for Infinity Engine Games and Baldur's Gate/Enhanced Edition Trilogy by dabus**
 
-**Download**             : https://github.com/BWS-EESetup/BWS-EE/archive/master.zip
+**Download**             : https://github.com/EE-Mod-Setup/EE-Mod-Setup/archive/master.zip
 
 **Mod requests**		 : Create a pull request
 
