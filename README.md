@@ -10,9 +10,6 @@
 
 **Support**				 : https://baldursextendedworld.com/Install-Tool/
 
-### Below are the links to the original BWS support material ###
-
-Discussion               : http://www.shsforums.net/topic/56670-big-world-setup-an-attempt-to-update-the-program/
 
 ### Features ###
 
@@ -43,7 +40,7 @@ Discussion               : http://www.shsforums.net/topic/56670-big-world-setup-
 2. Close any open games and game editors to avoid interference with the installation process
 3. Disable your antivirus (only while you are installing - don't forget to re-enable it after!)
 4. Disable User Account Control (if you don't do this, the automated installation can get stuck!)
-5. Execute "Update EE Game Setup.vbs" when this is the first time you launch it for this game. If you need to re-start during a setup, use "Start EE Game Setup.vbs" instead.
+5. Execute "Update EE Mod Setup.vbs" when this is the first time you launch it for this game. If you need to re-start during a setup, use "Start EE Mod Setup.vbs" instead.
 Note: If you reuse the tool and you kept the previously downloaded mods stored, you can use "Update BWS-EE Setup.vbs" to renew instead of having to download the tool and valid mods once again.
 6. Select game to be modded.
 7. Enter the game path(s) of the base game(s) you want to mod
