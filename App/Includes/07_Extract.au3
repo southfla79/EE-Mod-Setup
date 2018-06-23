@@ -239,7 +239,7 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>BiG-World-Fixpack-master\* .' & @CRLF)
 		_Extract_MoveMod('BiG-World-Fixpack-master')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\BWS-EE-Fixpack-master') Then
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\EE-Mod-Fixpack-master') Then
 		FileWrite($g_LogFile, '>EE-Mod-Fixpack-master\* .' & @CRLF)
 		_Extract_MoveMod('EE-Mod-Fixpack-master')
 	EndIf
