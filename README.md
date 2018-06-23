@@ -1,10 +1,10 @@
 ### The EE Game Setup Tool ###
 
-**is a fork from Big World Setup (BWS) : Mod Manager for Infinity Engine Games and Baldur's Gate/Enhanced Edition Trilogy by dabus**
+**is a derivative of Big World Setup (BWS) : Mod Manager for Infinity Engine Games and Baldur's Gate/Enhanced Edition Trilogy by dabus**
 
 **Download**             : https://github.com/EE-Mod-Setup/EE-Mod-Setup/archive/master.zip
 
-**Mod requests**		 : Create a pull request
+**Mod requests**		 : Create a pull request or ask here http://baldursextendedworld.com/Vanilla_Forums/categories/install-tool-help
 
 **Contribute Compilation** : Create a pull request with an ini file or weidu.log(s)
 
