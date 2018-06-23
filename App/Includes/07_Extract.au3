@@ -240,8 +240,8 @@ Func Au3ExFix($p_Num)
 		_Extract_MoveMod('BiG-World-Fixpack-master')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\BWS-EE-Fixpack-master') Then
-		FileWrite($g_LogFile, '>BWS-EE-Fixpack-master\* .' & @CRLF)
-		_Extract_MoveMod('BWS-EE-Fixpack-master')
+		FileWrite($g_LogFile, '>EE-Mod-Fixpack-master\* .' & @CRLF)
+		_Extract_MoveMod('EE-Mod-Fixpack-master')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BG1EE|BG2EE') And FileExists($g_GameDir&'\MSFM WeiDU Install v1.35') Then
 		FileWrite($g_LogFile, '>MSFM WeiDU Install v1.35\* .' & @CRLF)
