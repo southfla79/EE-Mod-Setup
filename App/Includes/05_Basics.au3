@@ -1,5 +1,13 @@
 #include-once
 
+Func _IsArch64()
+	Local $ArchEnv = StringLower(EnvGet("PROCESSOR_ARCHITECTURE"))
+	If $ArchEnv <> 'amd64' Then
+		$ArchEnv = StringLower(EnvGet("PROCESSOR_ARCHITEW6432"))
+	EndIf
+	Return $ArchEnv = 'amd64'
+EndFunc   ;==>_IsArch64
+
 ; ---------------------------------------------------------------------------------------------
 ; Open or close all cd-trays
 ; ---------------------------------------------------------------------------------------------
