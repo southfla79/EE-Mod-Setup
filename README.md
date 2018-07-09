@@ -16,6 +16,7 @@
 - assistance for creating your own customized game with any number of mods
 - downloading current versions of selected mods
 - easy mod installation for EET
+- support of patch 2.5
 - correct install order of mods/components
 - handle mod and components conflicts
 - apply interim fixes when needed
