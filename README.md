@@ -18,6 +18,7 @@
 - easy mod installation for EET
 - support of patch 2.5
 - correct install order of mods/components
+- optimized process for a fast performance
 - handle mod and components conflicts
 - apply interim fixes when needed
 - merge SoD DLC with BGEE if needed
@@ -52,7 +53,6 @@ Note: If you reuse the tool and you kept the previously downloaded mods stored, 
 
 ### How do I contribute? ###
 
-- learn git basics (https://git-scm.com/videos https://git-scm.com/book/en/v2)
 - fork the main project repository using "SourceTree" or "SmartGit" or other preferred tool
-- add mods/make other changes (see FAQ in the Docs folder of the download package!)
+- add mods/make other changes 
 - create a pull request to submit changes from your fork back to the main project
