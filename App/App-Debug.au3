@@ -1,6 +1,10 @@
 AutoItSetOption('TrayIconHide', 1)
 
-Global $g_TraceFile=@ScriptDir&'\Logs\BWS-Trace.log', $g_DebugFile = @ScriptDir & '\Logs\BWS-Debug-AutoIt.log'
+Global $g_ProgName = 'EE Game Setup'
+Global $g_BaseDir = StringLeft(@ScriptDir, StringInStr(@ScriptDir, '\', 1, -1) - 1)
+Global $g_LogDir = $g_BaseDir & '\Logs'
+Global $g_DebugFile = $g_LogDir & '\Logs\BWS-Debug-AutoIt.log'
+Global $g_TraceFile = $g_LogDir & '\BWS-Trace.log'
 
 ; =========================  Start the script with debugging-support =========================
 If $CmdLine[0] = 1 Then
@@ -47,7 +51,7 @@ Func Observe()
 		EndIf	
 		Sleep(25)
 	WEnd
-	FileWrite(@ScriptDir&'\Logs\BWS-Tracedump.log', $data)
+	FileWrite($g_LogDir & '\BWS-Tracedump.log', $data)
 	$Handle=FileOpen($g_TraceFile, 2)
 	$String=StringTrimLeft($data, 1)
 	$String=StringSplit(StringStripCR($String), @LF)
