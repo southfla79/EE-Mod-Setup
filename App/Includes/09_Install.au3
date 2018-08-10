@@ -1118,7 +1118,7 @@ Func _Install_ModifyForGroupInstall($p_Array, $p_Debug=0)
 				$NArray[$n]=$p_Array[$a]
 			WEnd
 		Else
-			$Split=StringSplit($p_Array[$a+1], ';')
+			$Split=StringSplit($p_Array[$a], ';')
 			If $Open = 0 And $Mod=$Split[2] Then ; Only open a group if setup lasts longer then 2 components
 				$NArray[$n]='GRP;Start'
 				$Open=1
