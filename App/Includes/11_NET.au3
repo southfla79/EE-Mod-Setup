@@ -337,8 +337,8 @@ Func Au3Net($p_Num = 0)
 					$DArray[$DSlot[$d]][10]=TimerInit(); reset timer
 					$localSize=FileGetSize($g_DownDir&'\'&$g_Down[$d][0])
 					If $DArray[$DSlot[$d]][11] = $localSize Then
-						GUICtrlSetColor($g_UI_Interact[5][$d+1], 0xff0000); paint the progressbar in a red color
-						GUICtrlSetColor($g_UI_Static[5][$d+2], 0xff0000)
+						GUICtrlSetColor($g_UI_Interact[5][$d+1], Default); paint the progressbar in a red color
+						GUICtrlSetColor($g_UI_Static[5][$d+2], Default)
 					Else
 						GUICtrlSetColor($g_UI_Interact[5][$d+1], Default); repaint progress-bar in case there was an error on this queue before
 						GUICtrlSetColor($g_UI_Static[5][$d+2], Default)
