@@ -706,7 +706,7 @@ Func _Net_LinkList($p_Num = 0)
 	_PrintDebug('+' & @ScriptLineNumber & ' Calling _Net_LinkList')
 	Local $Message = IniReadSection($g_TRAIni, 'NT-LinkList')
 	$g_Flags[0] = 1
-	$g_LogFile = $g_LogDir & '\EE-debug-Link-List.log'
+	$g_LogFile = $g_LogDir & '\EE-Debug-Link-List.log'
 	_Process_Gui_Create(1, 0)
 	Local $List = _Tree_GetCurrentList()
 	GUICtrlSetData($g_UI_Interact[6][4], _GetSTR($Message, 'H1')); => help text
