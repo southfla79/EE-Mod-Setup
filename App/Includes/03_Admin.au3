@@ -3238,7 +3238,7 @@ Func _Tra_WeiDUGetTra($p_Setup, $p_TP2='')
 				$LNum = 8
 			ElseIf StringRegExp($Line, '(?i)Korean')  Then
 				$LNum = 9
-			ElseIf StringRegExp($Line, '(?i)Chinese')  Then
+			ElseIf StringRegExp($Line, '(?i)Chinese|Schinese')  Then
 				$LNum = 10
 			ElseIf StringRegExp($Line, '(?i)Japanese')  Then
 				$LNum = 11
