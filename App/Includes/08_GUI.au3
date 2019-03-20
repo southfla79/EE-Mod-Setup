@@ -571,7 +571,7 @@ Func Au3BuildGUI($p_Num = 0)
 	$g_UI_Menu[1][0] = GUICtrlCreateContextMenu($g_UI_Static[4][2]); >> option-menu
 	$g_UI_Menu[1][6] = GUICtrlCreateMenu('6', $g_UI_Menu[1][0]); Click properties
 	$g_UI_Menu[1][12] = GUICtrlCreateMenu('12', $g_UI_Menu[1][0]); View
-	$g_UI_Menu[1][13] = GUICtrlCreateMenu('13', $g_UI_Menu[1][0]); Tools
+;	$g_UI_Menu[1][13] = GUICtrlCreateMenu('13', $g_UI_Menu[1][0]); Tools
 	GUICtrlCreateMenuItem('', $g_UI_Menu[1][0])
 	$g_UI_Menu[1][1] = GUICtrlCreateMenuItem('1', $g_UI_Menu[1][0]); Load
 	$g_UI_Menu[1][2] = GUICtrlCreateMenuItem('2', $g_UI_Menu[1][0]); Save
