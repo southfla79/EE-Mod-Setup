@@ -243,6 +243,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>EE-Mod-Fixpack-master\* .' & @CRLF)
 		_Extract_MoveMod('EE-Mod-Fixpack-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BG1EE') And FileExists($g_GameDir&'\BGEE_Fix-master') Then
+		FileWrite($g_LogFile, '>BGEE_Fix-master\* .' & @CRLF)
+		_Extract_MoveMod('BGEE_Fix-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BG1EE|BG2EE') And FileExists($g_GameDir&'\MSFM WeiDU Install v1.35') Then
 		FileWrite($g_LogFile, '>MSFM WeiDU Install v1.35\* .' & @CRLF)
 		_Extract_MoveMod('MSFM WeiDU Install v1.35')
