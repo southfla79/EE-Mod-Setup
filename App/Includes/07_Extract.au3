@@ -255,6 +255,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>TDD-1.14\* .' & @CRLF)
 		_Extract_MoveMod('TDD-1.14')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BG1EE|BG2EE') And FileExists($g_GameDir&'\ConvenientAmmunition-1.0') Then
+		FileWrite($g_LogFile, '>ConvenientAmmunition-1.0\* .' & @CRLF)
+		_Extract_MoveMod('ConvenientAmmunition-1.0')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS') And FileExists($g_GameDir&'\SandrahToT-master') Then
 		FileWrite($g_LogFile, '>SandrahToT-master\* .' & @CRLF)
 		_Extract_MoveMod('SandrahToT-master')
