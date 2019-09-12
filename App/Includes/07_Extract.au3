@@ -259,6 +259,46 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>ConvenientAmmunition-1.0\* .' & @CRLF)
 		_Extract_MoveMod('ConvenientAmmunition-1.0')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\A7-DlcMerger-master') Then
+		FileWrite($g_LogFile, '>A7-DlcMerger-master\* .' & @CRLF)
+		_Extract_MoveMod('A7-DlcMerger-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\bg1ub-master') Then
+		FileWrite($g_LogFile, '>bg1ub-master\* .' & @CRLF)
+		_Extract_MoveMod('bg1ub-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Drake-master') Then
+		FileWrite($g_LogFile, '>Drake-master\* .' & @CRLF)
+		_Extract_MoveMod('Drake-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Gavin_BG-master') Then
+		FileWrite($g_LogFile, '>Gavin_BG-master\* .' & @CRLF)
+		_Extract_MoveMod('Gavin_BG-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Isra-master') Then
+		FileWrite($g_LogFile, '>Isra-master\* .' & @CRLF)
+		_Extract_MoveMod('Isra-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Sirene-NPC-master') Then
+		FileWrite($g_LogFile, '>Sirene-NPC-master\* .' & @CRLF)
+		_Extract_MoveMod('Sirene-NPC-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\BG1NPC-24.0-beta') Then
+		FileWrite($g_LogFile, '>BG1NPC-24.0-beta\* .' & @CRLF)
+		_Extract_MoveMod('BG1NPC-24.0-beta')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\bg1npcmusic-master') Then
+		FileWrite($g_LogFile, '>bg1npcmusic-master\* .' & @CRLF)
+		_Extract_MoveMod('bg1npcmusic-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Gibberlings3-CoranBGFriend-7ec8d6f') Then
+		FileWrite($g_LogFile, '>Gibberlings3-CoranBGFriend-7ec8d6f\* .' & @CRLF)
+		_Extract_MoveMod('Gibberlings3-CoranBGFriend-7ec8d6f')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\AstroBryGuy-NeeraBanters-7124366') Then
+		FileWrite($g_LogFile, '>AstroBryGuy-NeeraBanters-7124366\* .' & @CRLF)
+		_Extract_MoveMod('AstroBryGuy-NeeraBanters-7124366')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS') And FileExists($g_GameDir&'\SandrahToT-master') Then
 		FileWrite($g_LogFile, '>SandrahToT-master\* .' & @CRLF)
 		_Extract_MoveMod('SandrahToT-master')
