@@ -303,6 +303,14 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>SharteelSoD-1.3\* .' & @CRLF)
 		_Extract_MoveMod('SharteelSoD-1.3')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Sampsca-ThrownHammers-20eb91a') Then
+		FileWrite($g_LogFile, '>Sampsca-ThrownHammers-20eb91a\* .' & @CRLF)
+		_Extract_MoveMod('Sampsca-ThrownHammers-20eb91a')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\TheBeaurinLegacy-master') Then
+		FileWrite($g_LogFile, '>TheBeaurinLegacy-master\* .' & @CRLF)
+		_Extract_MoveMod('TheBeaurinLegacy-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS') And FileExists($g_GameDir&'\SandrahToT-master') Then
 		FileWrite($g_LogFile, '>SandrahToT-master\* .' & @CRLF)
 		_Extract_MoveMod('SandrahToT-master')
