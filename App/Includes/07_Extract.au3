@@ -339,6 +339,42 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>Alternatives-master\* .' & @CRLF)
 		_Extract_MoveMod('Alternatives-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Angelo-master') Then
+		FileWrite($g_LogFile, '>Angelo-master\* .' & @CRLF)
+		_Extract_MoveMod('Angelo-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Ascension-master') Then
+		FileWrite($g_LogFile, '>Ascension-master\* .' & @CRLF)
+		_Extract_MoveMod('Ascension-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\ArienaEE-3.0') Then
+		FileWrite($g_LogFile, '>ArienaEE-3.0\* .' & @CRLF)
+		_Extract_MoveMod('ArienaEE-3.0')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\bg2-npcmod-lena-0.8') Then
+		FileWrite($g_LogFile, '>bg2-npcmod-lena-0.8\* .' & @CRLF)
+		_Extract_MoveMod('bg2-npcmod-lena-0.8')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\BGEESpawn-master') Then
+		FileWrite($g_LogFile, '>BGEESpawn-master\* .' & @CRLF)
+		_Extract_MoveMod('BGEESpawn-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Caelar-1.0') Then
+		FileWrite($g_LogFile, '>Caelar-1.0\* .' & @CRLF)
+		_Extract_MoveMod('Caelar-1.0')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\ChloeEET-1.6_EE') Then
+		FileWrite($g_LogFile, '>ChloeEET-1.6_EE\* .' & @CRLF)
+		_Extract_MoveMod('ChloeEET-1.6_EE')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Corwin-0.4') Then
+		FileWrite($g_LogFile, '>Corwin-0.4\* .' & @CRLF)
+		_Extract_MoveMod('Corwin-0.4')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Crossmod_Banter_Pack_for_Baldurs_Gate_II-master') Then
+		FileWrite($g_LogFile, '>Crossmod_Banter_Pack_for_Baldurs_Gate_II-master\* .' & @CRLF)
+		_Extract_MoveMod('Crossmod_Banter_Pack_for_Baldurs_Gate_II-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS') And FileExists($g_GameDir&'\SandrahToT-master') Then
 		FileWrite($g_LogFile, '>SandrahToT-master\* .' & @CRLF)
 		_Extract_MoveMod('SandrahToT-master')
