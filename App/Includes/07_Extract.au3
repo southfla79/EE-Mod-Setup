@@ -315,9 +315,29 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>Indira_NPC-master\* .' & @CRLF)
 		_Extract_MoveMod('Indira_NPC-master')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\EET-1.0RC12') Then
-		FileWrite($g_LogFile, '>EET-1.0RC12\* .' & @CRLF)
-		_Extract_MoveMod('EET-1.0RC12')
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\EET-1.0RC12.1') Then
+		FileWrite($g_LogFile, '>EET-1.0RC12.1\* .' & @CRLF)
+		_Extract_MoveMod('EET-1.0RC12.1')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\AC_QUEST-master') Then
+		FileWrite($g_LogFile, '>AC_QUEST-master\* .' & @CRLF)
+		_Extract_MoveMod('AC_QUEST-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\AjocMod-master') Then
+		FileWrite($g_LogFile, '>AjocMod-master\* .' & @CRLF)
+		_Extract_MoveMod('AjocMod-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\A7-LightingPackEE-master') Then
+		FileWrite($g_LogFile, '>A7-LightingPackEE-master\* .' & @CRLF)
+		_Extract_MoveMod('A7-LightingPackEE-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\AloraEE-master') Then
+		FileWrite($g_LogFile, '>AloraEE-master\* .' & @CRLF)
+		_Extract_MoveMod('AloraEE-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Alternatives-master') Then
+		FileWrite($g_LogFile, '>Alternatives-master\* .' & @CRLF)
+		_Extract_MoveMod('Alternatives-master')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS') And FileExists($g_GameDir&'\SandrahToT-master') Then
 		FileWrite($g_LogFile, '>SandrahToT-master\* .' & @CRLF)
