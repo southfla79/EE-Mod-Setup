@@ -311,6 +311,14 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>TheBeaurinLegacy-master\* .' & @CRLF)
 		_Extract_MoveMod('TheBeaurinLegacy-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Indira_NPC-master') Then
+		FileWrite($g_LogFile, '>Indira_NPC-master\* .' & @CRLF)
+		_Extract_MoveMod('Indira_NPC-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\EET-1.0RC12') Then
+		FileWrite($g_LogFile, '>EET-1.0RC12\* .' & @CRLF)
+		_Extract_MoveMod('EET-1.0RC12')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS') And FileExists($g_GameDir&'\SandrahToT-master') Then
 		FileWrite($g_LogFile, '>SandrahToT-master\* .' & @CRLF)
 		_Extract_MoveMod('SandrahToT-master')
