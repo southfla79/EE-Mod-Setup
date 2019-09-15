@@ -459,9 +459,29 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>LongerRoadEE-1.6.6\* .' & @CRLF)
 		_Extract_MoveMod('LongerRoadEE-1.6.6')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Magestronghold-0.3') Then
-		FileWrite($g_LogFile, '>Magestronghold-0.3\* .' & @CRLF)
-		_Extract_MoveMod('Magestronghold-0.3')
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\NindeEET-master') Then
+		FileWrite($g_LogFile, '>NindeEET-master\* .' & @CRLF)
+		_Extract_MoveMod('NindeEET-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\NTotSC-master') Then
+		FileWrite($g_LogFile, '>NTotSC-master\* .' & @CRLF)
+		_Extract_MoveMod('NTotSC-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Romantic_Encounters_BG2-master') Then
+		FileWrite($g_LogFile, '>Romantic_Encounters_BG2-master\* .' & @CRLF)
+		_Extract_MoveMod('Romantic_Encounters_BG2-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\RoseRE-master') Then
+		FileWrite($g_LogFile, '>RoseRE-master\* .' & @CRLF)
+		_Extract_MoveMod('RoseRE-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\RoTerror-EE-master') Then
+		FileWrite($g_LogFile, '>RoTerror-EE-master\* .' & @CRLF)
+		_Extract_MoveMod('RoTerror-EE-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\RoxanneSHS-BoneHill-642899c') Then
+		FileWrite($g_LogFile, '>RoxanneSHS-BoneHill-642899c\* .' & @CRLF)
+		_Extract_MoveMod('RoxanneSHS-BoneHill-642899c')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS') And FileExists($g_GameDir&'\SandrahToT-master') Then
 		FileWrite($g_LogFile, '>SandrahToT-master\* .' & @CRLF)
