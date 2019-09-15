@@ -247,15 +247,15 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>BGEE_Fix-master\* .' & @CRLF)
 		_Extract_MoveMod('BGEE_Fix-master')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BG1EE|BG2EE') And FileExists($g_GameDir&'\MSFM WeiDU Install v1.35') Then
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\MSFM WeiDU Install v1.35') Then
 		FileWrite($g_LogFile, '>MSFM WeiDU Install v1.35\* .' & @CRLF)
 		_Extract_MoveMod('MSFM WeiDU Install v1.35')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BG1EE|BG2EE') And FileExists($g_GameDir&'\TDD-1.14') Then
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\TDD-1.14') Then
 		FileWrite($g_LogFile, '>TDD-1.14\* .' & @CRLF)
 		_Extract_MoveMod('TDD-1.14')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BG1EE|BG2EE') And FileExists($g_GameDir&'\ConvenientAmmunition-1.0') Then
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\ConvenientAmmunition-1.0') Then
 		FileWrite($g_LogFile, '>ConvenientAmmunition-1.0\* .' & @CRLF)
 		_Extract_MoveMod('ConvenientAmmunition-1.0')
 	EndIf
@@ -483,7 +483,7 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>RoxanneSHS-BoneHill-642899c\* .' & @CRLF)
 		_Extract_MoveMod('RoxanneSHS-BoneHill-642899c')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWP|BWS') And FileExists($g_GameDir&'\SandrahToT-master') Then
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\SandrahToT-master') Then
 		FileWrite($g_LogFile, '>SandrahToT-master\* .' & @CRLF)
 		_Extract_MoveMod('SandrahToT-master')
 	EndIf
