@@ -435,13 +435,33 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>Gavin_BG2-master\* .' & @CRLF)
 		_Extract_MoveMod('Gavin_BG2-master')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\EdwinEET-master') Then
-		FileWrite($g_LogFile, '>EdwinEET-master\* .' & @CRLF)
-		_Extract_MoveMod('EdwinEET-master')
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\iwdification-master') Then
+		FileWrite($g_LogFile, '>iwdification-master\* .' & @CRLF)
+		_Extract_MoveMod('iwdification-master')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Gibberlings3-NPCTweak-5a84301') Then
 		FileWrite($g_LogFile, '>Gibberlings3-NPCTweak-5a84301\* .' & @CRLF)
 		_Extract_MoveMod('Gibberlings3-NPCTweak-5a84301')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\IylosEET-master') Then
+		FileWrite($g_LogFile, '>IylosEET-master\* .' & @CRLF)
+		_Extract_MoveMod('IylosEET-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\KidoEE-master') Then
+		FileWrite($g_LogFile, '>KidoEE-master\* .' & @CRLF)
+		_Extract_MoveMod('KidoEE-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Kitanya-Resurrected-master') Then
+		FileWrite($g_LogFile, '>Kitanya-Resurrected-master\* .' & @CRLF)
+		_Extract_MoveMod('Kitanya-Resurrected-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\LongerRoadEE-1.6.6') Then
+		FileWrite($g_LogFile, '>LongerRoadEE-1.6.6\* .' & @CRLF)
+		_Extract_MoveMod('LongerRoadEE-1.6.6')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Magestronghold-0.3') Then
+		FileWrite($g_LogFile, '>Magestronghold-0.3\* .' & @CRLF)
+		_Extract_MoveMod('Magestronghold-0.3')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS') And FileExists($g_GameDir&'\SandrahToT-master') Then
 		FileWrite($g_LogFile, '>SandrahToT-master\* .' & @CRLF)
