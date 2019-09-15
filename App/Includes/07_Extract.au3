@@ -335,6 +335,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>AloraEE-master\* .' & @CRLF)
 		_Extract_MoveMod('AloraEE-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\A7-HiddenGameplayOptions-master') Then
+		FileWrite($g_LogFile, '>A7-HiddenGameplayOptions-master\* .' & @CRLF)
+		_Extract_MoveMod('A7-HiddenGameplayOptions-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Alternatives-master') Then
 		FileWrite($g_LogFile, '>Alternatives-master\* .' & @CRLF)
 		_Extract_MoveMod('Alternatives-master')
@@ -342,6 +346,10 @@ Func Au3ExFix($p_Num)
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Angelo-master') Then
 		FileWrite($g_LogFile, '>Angelo-master\* .' & @CRLF)
 		_Extract_MoveMod('Angelo-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\ThePictureStandard-master') Then
+		FileWrite($g_LogFile, '>ThePictureStandard-master\* .' & @CRLF)
+		_Extract_MoveMod('ThePictureStandard-master')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Ascension-master') Then
 		FileWrite($g_LogFile, '>Ascension-master\* .' & @CRLF)
@@ -435,9 +443,21 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>g3anniversary-master\* .' & @CRLF)
 		_Extract_MoveMod('g3anniversary-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\HQ-SoundClips-BG2EE-master') Then
+		FileWrite($g_LogFile, '>HQ-SoundClips-BG2EE-master\* .' & @CRLF)
+		_Extract_MoveMod('HQ-SoundClips-BG2EE-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Gavin_BG2-master') Then
 		FileWrite($g_LogFile, '>Gavin_BG2-master\* .' & @CRLF)
 		_Extract_MoveMod('Gavin_BG2-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\AstroBryGuy-JaheiraRecast-501290c') Then
+		FileWrite($g_LogFile, '>AstroBryGuy-JaheiraRecast-501290c\* .' & @CRLF)
+		_Extract_MoveMod('AstroBryGuy-JaheiraRecast-501290c')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Portraits-Portraits-Everywhere-master') Then
+		FileWrite($g_LogFile, '>Portraits-Portraits-Everywhere-master\* .' & @CRLF)
+		_Extract_MoveMod('Portraits-Portraits-Everywhere-master')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\iwdification-master') Then
 		FileWrite($g_LogFile, '>iwdification-master\* .' & @CRLF)
