@@ -407,6 +407,22 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>DeepgnomesEET-0.3\* .' & @CRLF)
 		_Extract_MoveMod('DeepgnomesEET-0.3')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\DjinniCompanion-master') Then
+		FileWrite($g_LogFile, '>DjinniCompanion-master\* .' & @CRLF)
+		_Extract_MoveMod('DjinniCompanion-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\DruidGroveMakeover-1.2') Then
+		FileWrite($g_LogFile, '>DruidGroveMakeover-1.2\* .' & @CRLF)
+		_Extract_MoveMod('DruidGroveMakeover-1.2')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\EdwinEET-master') Then
+		FileWrite($g_LogFile, '>EdwinEET-master\* .' & @CRLF)
+		_Extract_MoveMod('EdwinEET-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\EET_Tweaks-master') Then
+		FileWrite($g_LogFile, '>EET_Tweaks-master\* .' & @CRLF)
+		_Extract_MoveMod('EET_Tweaks-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS') And FileExists($g_GameDir&'\SandrahToT-master') Then
 		FileWrite($g_LogFile, '>SandrahToT-master\* .' & @CRLF)
 		_Extract_MoveMod('SandrahToT-master')
