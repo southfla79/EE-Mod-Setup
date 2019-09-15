@@ -375,6 +375,18 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>Crossmod_Banter_Pack_for_Baldurs_Gate_II-master\* .' & @CRLF)
 		_Extract_MoveMod('Crossmod_Banter_Pack_for_Baldurs_Gate_II-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\SandrahEET-master') Then
+		FileWrite($g_LogFile, '>SandrahEET-master\* .' & @CRLF)
+		_Extract_MoveMod('SandrahEET-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\SandrahRtF-master') Then
+		FileWrite($g_LogFile, '>SandrahRtF-master\* .' & @CRLF)
+		_Extract_MoveMod('SandrahRtF-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\DaceEET-master') Then
+		FileWrite($g_LogFile, '>DaceEET-master\* .' & @CRLF)
+		_Extract_MoveMod('DaceEET-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS') And FileExists($g_GameDir&'\SandrahToT-master') Then
 		FileWrite($g_LogFile, '>SandrahToT-master\* .' & @CRLF)
 		_Extract_MoveMod('SandrahToT-master')
