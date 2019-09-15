@@ -503,6 +503,50 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>Tamoko-0.4\* .' & @CRLF)
 		_Extract_MoveMod('Tamoko-0.4')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\TDDz-TDDz_v1.2.7') Then
+		FileWrite($g_LogFile, '>TDDz-TDDz_v1.2.7\* .' & @CRLF)
+		_Extract_MoveMod('TDDz-TDDz_v1.2.7')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\TGC1e-master') Then
+		FileWrite($g_LogFile, '>TGC1e-master\* .' & @CRLF)
+		_Extract_MoveMod('TGC1e-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\thalan-4.2.4') Then
+		FileWrite($g_LogFile, '>thalan-4.2.4\* .' & @CRLF)
+		_Extract_MoveMod('thalan-4.2.4')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\TowerOfDeception-4.0.1') Then
+		FileWrite($g_LogFile, '>TowerOfDeception-4.0.1\* .' & @CRLF)
+		_Extract_MoveMod('TowerOfDeception-4.0.1')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Tweaks-Anthology-9') Then
+		FileWrite($g_LogFile, '>Tweaks-Anthology-9\* .' & @CRLF)
+		_Extract_MoveMod('Tweaks-Anthology-9')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\TyrisEE-master') Then
+		FileWrite($g_LogFile, '>TyrisEE-master\* .' & @CRLF)
+		_Extract_MoveMod('TyrisEE-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\UnfinishedBusiness-master') Then
+		FileWrite($g_LogFile, '>UnfinishedBusiness-master\* .' & @CRLF)
+		_Extract_MoveMod('UnfinishedBusiness-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\ValenEE-master') Then
+		FileWrite($g_LogFile, '>ValenEE-master\* .' & @CRLF)
+		_Extract_MoveMod('ValenEE-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\VaultEE-8.0') Then
+		FileWrite($g_LogFile, '>VaultEE-8.0\* .' & @CRLF)
+		_Extract_MoveMod('VaultEE-8.0')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\WheelsOfProphecy-master') Then
+		FileWrite($g_LogFile, '>WheelsOfProphecy-master\* .' & @CRLF)
+		_Extract_MoveMod('WheelsOfProphecy-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\XulayeEet-2.1') Then
+		FileWrite($g_LogFile, '>XulayeEet-2.1\* .' & @CRLF)
+		_Extract_MoveMod('XulayeEet-2.1')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\SandrahToT-master') Then
 		FileWrite($g_LogFile, '>SandrahToT-master\* .' & @CRLF)
 		_Extract_MoveMod('SandrahToT-master')
