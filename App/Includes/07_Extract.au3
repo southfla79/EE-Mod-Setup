@@ -423,6 +423,26 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>EET_Tweaks-master\* .' & @CRLF)
 		_Extract_MoveMod('EET_Tweaks-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Fadingpromises-master') Then
+		FileWrite($g_LogFile, '>Fadingpromises-master\* .' & @CRLF)
+		_Extract_MoveMod('Fadingpromises-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\g3anniversary-master') Then
+		FileWrite($g_LogFile, '>g3anniversary-master\* .' & @CRLF)
+		_Extract_MoveMod('g3anniversary-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Gavin_BG2-master') Then
+		FileWrite($g_LogFile, '>Gavin_BG2-master\* .' & @CRLF)
+		_Extract_MoveMod('Gavin_BG2-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\EdwinEET-master') Then
+		FileWrite($g_LogFile, '>EdwinEET-master\* .' & @CRLF)
+		_Extract_MoveMod('EdwinEET-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Gibberlings3-NPCTweak-5a84301') Then
+		FileWrite($g_LogFile, '>Gibberlings3-NPCTweak-5a84301\* .' & @CRLF)
+		_Extract_MoveMod('Gibberlings3-NPCTweak-5a84301')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS') And FileExists($g_GameDir&'\SandrahToT-master') Then
 		FileWrite($g_LogFile, '>SandrahToT-master\* .' & @CRLF)
 		_Extract_MoveMod('SandrahToT-master')
