@@ -471,9 +471,17 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>NindeEET-master\* .' & @CRLF)
 		_Extract_MoveMod('NindeEET-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Item_Upgrade-master') Then
+		FileWrite($g_LogFile, '>Item_Upgrade-master\* .' & @CRLF)
+		_Extract_MoveMod('Item_Upgrade-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\NTotSC-master') Then
 		FileWrite($g_LogFile, '>NTotSC-master\* .' & @CRLF)
 		_Extract_MoveMod('NTotSC-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\msfm-1.56') Then
+		FileWrite($g_LogFile, '>msfm-1.56\* .' & @CRLF)
+		_Extract_MoveMod('msfm-1.56')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Romantic_Encounters_BG2-master') Then
 		FileWrite($g_LogFile, '>Romantic_Encounters_BG2-master\* .' & @CRLF)
