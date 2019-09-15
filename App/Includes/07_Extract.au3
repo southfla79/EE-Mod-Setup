@@ -387,6 +387,26 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>DaceEET-master\* .' & @CRLF)
 		_Extract_MoveMod('DaceEET-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\CtB-EE-master') Then
+		FileWrite($g_LogFile, '>CtB-EE-master\* .' & @CRLF)
+		_Extract_MoveMod('CtB-EE-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\EET_Fixpack-master') Then
+		FileWrite($g_LogFile, '>EET_Fixpack-master\* .' & @CRLF)
+		_Extract_MoveMod('EET_Fixpack-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\EET_Expanded_Thief_Stronghold-2.21') Then
+		FileWrite($g_LogFile, '>EET_Expanded_Thief_Stronghold-2.21\* .' & @CRLF)
+		_Extract_MoveMod('EET_Expanded_Thief_Stronghold-2.21')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\DSotSC-master') Then
+		FileWrite($g_LogFile, '>DSotSC-master\* .' & @CRLF)
+		_Extract_MoveMod('DSotSC-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\DeepgnomesEET-0.3') Then
+		FileWrite($g_LogFile, '>DeepgnomesEET-0.3\* .' & @CRLF)
+		_Extract_MoveMod('DeepgnomesEET-0.3')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS') And FileExists($g_GameDir&'\SandrahToT-master') Then
 		FileWrite($g_LogFile, '>SandrahToT-master\* .' & @CRLF)
 		_Extract_MoveMod('SandrahToT-master')
