@@ -451,6 +451,14 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>KidoEE-master\* .' & @CRLF)
 		_Extract_MoveMod('KidoEE-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\rr-master') Then
+		FileWrite($g_LogFile, '>rr-master\* .' & @CRLF)
+		_Extract_MoveMod('rr-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\A7-ImprovedArcher-master') Then
+		FileWrite($g_LogFile, '>A7-ImprovedArcher-master\* .' & @CRLF)
+		_Extract_MoveMod('A7-ImprovedArcher-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Kitanya-Resurrected-master') Then
 		FileWrite($g_LogFile, '>Kitanya-Resurrected-master\* .' & @CRLF)
 		_Extract_MoveMod('Kitanya-Resurrected-master')
@@ -527,6 +535,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>TyrisEE-master\* .' & @CRLF)
 		_Extract_MoveMod('TyrisEE-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\randomiser-master') Then
+		FileWrite($g_LogFile, '>randomiser-master\* .' & @CRLF)
+		_Extract_MoveMod('randomiser-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\UnfinishedBusiness-master') Then
 		FileWrite($g_LogFile, '>UnfinishedBusiness-master\* .' & @CRLF)
 		_Extract_MoveMod('UnfinishedBusiness-master')
@@ -546,6 +558,10 @@ Func Au3ExFix($p_Num)
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\XulayeEet-2.1') Then
 		FileWrite($g_LogFile, '>XulayeEet-2.1\* .' & @CRLF)
 		_Extract_MoveMod('XulayeEet-2.1')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\jimfix-master') Then
+		FileWrite($g_LogFile, '>jimfix-master\* .' & @CRLF)
+		_Extract_MoveMod('jimfix-master')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\SandrahToT-master') Then
 		FileWrite($g_LogFile, '>SandrahToT-master\* .' & @CRLF)
