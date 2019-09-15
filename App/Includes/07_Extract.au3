@@ -419,6 +419,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>EdwinEET-master\* .' & @CRLF)
 		_Extract_MoveMod('EdwinEET-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\EEUITweaks-3.2') Then
+		FileWrite($g_LogFile, '>EEUITweaks-3.2\* .' & @CRLF)
+		_Extract_MoveMod('EEUITweaks-3.2')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\EET_Tweaks-master') Then
 		FileWrite($g_LogFile, '>EET_Tweaks-master\* .' & @CRLF)
 		_Extract_MoveMod('EET_Tweaks-master')
@@ -470,6 +474,10 @@ Func Au3ExFix($p_Num)
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\NindeEET-master') Then
 		FileWrite($g_LogFile, '>NindeEET-master\* .' & @CRLF)
 		_Extract_MoveMod('NindeEET-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\SongAndSilence-master') Then
+		FileWrite($g_LogFile, '>SongAndSilence-master\* .' & @CRLF)
+		_Extract_MoveMod('SongAndSilence-master')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Item_Upgrade-master') Then
 		FileWrite($g_LogFile, '>Item_Upgrade-master\* .' & @CRLF)
@@ -530,6 +538,10 @@ Func Au3ExFix($p_Num)
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\thalan-4.2.4') Then
 		FileWrite($g_LogFile, '>thalan-4.2.4\* .' & @CRLF)
 		_Extract_MoveMod('thalan-4.2.4')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\NPC_EE-3.8') Then
+		FileWrite($g_LogFile, '>NPC_EE-3.8\* .' & @CRLF)
+		_Extract_MoveMod('NPC_EE-3.8')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\TowerOfDeception-4.0.1') Then
 		FileWrite($g_LogFile, '>TowerOfDeception-4.0.1\* .' & @CRLF)
