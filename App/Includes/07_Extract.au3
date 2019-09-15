@@ -479,15 +479,6 @@ Func Au3ExFix($p_Num)
 					$Rename = IniRead($g_MODIni, $Fault[$f][0], 'REN', ''); look for some non-standard-filenames that will be renamed later
 					If $Rename <> '' Then $TP2 = _Test_GetTP2($Rename, '\')
 				EndIf
-				If $TP2 <> '0' Then
-					If $TP2 <> '' Then FileMove($TP2, $TP2&'.dlt', 1)
-				Else
-					$Test = _IniRead($ReadSection, 'Test', '')
-					If $Test <> '' Then; check for a file if package is not a weidu-mod
-						$Test=StringSplit($Test, ':')
-						If FileExists($g_GameDir&'\'&$Test[1]) And StringRegExp($Test[1], '\A[^.]{1,}\x2e') Then FileMove($g_GameDir&'\'&$Test[1], $g_GameDir&'\'&$Test[1]&'.dlt', 1)
-					EndIf
-				EndIf
 			EndIf
 			If StringRegExp($Fault[$f][1], '2|4') Then; remove file from addon-test
 				$Test=StringSplit(_IniRead($ReadSection, 'AddTest', ''), ':')
