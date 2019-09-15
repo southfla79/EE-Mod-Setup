@@ -339,6 +339,14 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>A7-HiddenGameplayOptions-master\* .' & @CRLF)
 		_Extract_MoveMod('A7-HiddenGameplayOptions-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Balduran-s-Sea-Tower-master') Then
+		FileWrite($g_LogFile, '>Balduran-s-Sea-Tower-master\* .' & @CRLF)
+		_Extract_MoveMod('Balduran-s-Sea-Tower-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Gorion-s-Dream-master') Then
+		FileWrite($g_LogFile, '>Gorion-s-Dream-master\* .' & @CRLF)
+		_Extract_MoveMod('Gorion-s-Dream-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Alternatives-master') Then
 		FileWrite($g_LogFile, '>Alternatives-master\* .' & @CRLF)
 		_Extract_MoveMod('Alternatives-master')
