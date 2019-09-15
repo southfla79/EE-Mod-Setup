@@ -483,6 +483,26 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>RoxanneSHS-BoneHill-642899c\* .' & @CRLF)
 		_Extract_MoveMod('RoxanneSHS-BoneHill-642899c')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Saerileth-master') Then
+		FileWrite($g_LogFile, '>Saerileth-master\* .' & @CRLF)
+		_Extract_MoveMod('Saerileth-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Sirene-NPC-for-BG2-EE-master') Then
+		FileWrite($g_LogFile, '>Sirene-NPC-for-BG2-EE-master\* .' & @CRLF)
+		_Extract_MoveMod('Sirene-NPC-for-BG2-EE-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\SoDBanterEET-0.4') Then
+		FileWrite($g_LogFile, '>SoDBanterEET-0.4\* .' & @CRLF)
+		_Extract_MoveMod('SoDBanterEET-0.4')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\SwordCoastStratagems-32.5') Then
+		FileWrite($g_LogFile, '>SwordCoastStratagems-32.5\* .' & @CRLF)
+		_Extract_MoveMod('SwordCoastStratagems-32.5')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Tamoko-0.4') Then
+		FileWrite($g_LogFile, '>Tamoko-0.4\* .' & @CRLF)
+		_Extract_MoveMod('Tamoko-0.4')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\SandrahToT-master') Then
 		FileWrite($g_LogFile, '>SandrahToT-master\* .' & @CRLF)
 		_Extract_MoveMod('SandrahToT-master')
