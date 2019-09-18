@@ -683,6 +683,26 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>A7-GolemConstruction-master\* .' & @CRLF)
 		_Extract_MoveMod('A7-GolemConstruction-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\LeUI-master') Then
+		FileWrite($g_LogFile, '>LeUI-master\* .' & @CRLF)
+		_Extract_MoveMod('LeUI-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\ItemRevisions-master') Then
+		FileWrite($g_LogFile, '>ItemRevisions-master\* .' & @CRLF)
+		_Extract_MoveMod('ItemRevisions-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Gibberlings3-SpellRevisions-9230f95') Then
+		FileWrite($g_LogFile, '>Gibberlings3-SpellRevisions-9230f95\* .' & @CRLF)
+		_Extract_MoveMod('Gibberlings3-SpellRevisions-9230f95')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\A7-ImprovedShamanicDance-master') Then
+		FileWrite($g_LogFile, '>A7-ImprovedShamanicDance-master\* .' & @CRLF)
+		_Extract_MoveMod('A7-ImprovedShamanicDance-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\thisisulb-SpiritwalkerKit-777613d') Then
+		FileWrite($g_LogFile, '>thisisulb-SpiritwalkerKit-777613d\* .' & @CRLF)
+		_Extract_MoveMod('thisisulb-SpiritwalkerKit-777613d')
+	EndIf
 ; ==============  Fix textstring so weidu will not fail to install the mod ============
 	If StringRegExp($g_Flags[14], 'BWP|BWS') And FileExists($g_BG2Dir&'\setup-bonehillv275.exe') Then
 		$Text=FileRead($g_BG2Dir&'\bonehillv275\Language\deutsch\D\BHARRNES.TRA')
