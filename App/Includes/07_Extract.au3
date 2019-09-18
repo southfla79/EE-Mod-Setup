@@ -327,6 +327,34 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>AjocMod-master\* .' & @CRLF)
 		_Extract_MoveMod('AjocMod-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\AzengaardEE-master') Then
+		FileWrite($g_LogFile, '>AzengaardEE-master\* .' & @CRLF)
+		_Extract_MoveMod('AzengaardEE-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\RoxanneSHS-ToA-f664f19') Then
+		FileWrite($g_LogFile, '>RoxanneSHS-ToA-f664f19\* .' & @CRLF)
+		_Extract_MoveMod('RoxanneSHS-ToA-f664f19')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\InfinityMods-FishingForTrouble-6ed3896') Then
+		FileWrite($g_LogFile, '>InfinityMods-FishingForTrouble-6ed3896\* .' & @CRLF)
+		_Extract_MoveMod('InfinityMods-FishingForTrouble-6ed3896')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Magestronghold-0.3') Then
+		FileWrite($g_LogFile, '>Magestronghold-0.3\* .' & @CRLF)
+		_Extract_MoveMod('Magestronghold-0.3')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\ImnesvaleEE-master') Then
+		FileWrite($g_LogFile, '>ImnesvaleEE-master\* .' & @CRLF)
+		_Extract_MoveMod('ImnesvaleEE-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\A7-TestYourMettle-master') Then
+		FileWrite($g_LogFile, '>A7-TestYourMettle-master\* .' & @CRLF)
+		_Extract_MoveMod('A7-TestYourMettle-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\hiddenadventure-master') Then
+		FileWrite($g_LogFile, '>hiddenadventure-master\* .' & @CRLF)
+		_Extract_MoveMod('hiddenadventure-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\A7-LightingPackEE-master') Then
 		FileWrite($g_LogFile, '>A7-LightingPackEE-master\* .' & @CRLF)
 		_Extract_MoveMod('A7-LightingPackEE-master')
