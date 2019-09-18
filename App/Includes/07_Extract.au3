@@ -643,6 +643,46 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>SandrahToT-master\* .' & @CRLF)
 		_Extract_MoveMod('SandrahToT-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Shards_of_Ice-master') Then
+		FileWrite($g_LogFile, '>Shards_of_Ice-master\* .' & @CRLF)
+		_Extract_MoveMod('Shards_of_Ice-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Kivan_and_Deheriana-master') Then
+		FileWrite($g_LogFile, '>Kivan_and_Deheriana-master\* .' & @CRLF)
+		_Extract_MoveMod('Kivan_and_Deheriana-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Gibberlings3-Anishai-d8ea3dc') Then
+		FileWrite($g_LogFile, '>Gibberlings3-Anishai-d8ea3dc\* .' & @CRLF)
+		_Extract_MoveMod('Gibberlings3-Anishai-d8ea3dc')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\GwendolyneFreddy-butchery-d7d154c') Then
+		FileWrite($g_LogFile, '>GwendolyneFreddy-butchery-d7d154c\* .' & @CRLF)
+		_Extract_MoveMod('GwendolyneFreddy-butchery-d7d154c')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\PnP_Celestials-master') Then
+		FileWrite($g_LogFile, '>PnP_Celestials-master\* .' & @CRLF)
+		_Extract_MoveMod('PnP_Celestials-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\AnimalCompanions-master') Then
+		FileWrite($g_LogFile, '>AnimalCompanions-master\* .' & @CRLF)
+		_Extract_MoveMod('AnimalCompanions-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\A7-BanterAccelerator-master') Then
+		FileWrite($g_LogFile, '>A7-BanterAccelerator-master\* .' & @CRLF)
+		_Extract_MoveMod('A7-BanterAccelerator-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Divine_Remix-master') Then
+		FileWrite($g_LogFile, '>Divine_Remix-master\* .' & @CRLF)
+		_Extract_MoveMod('Divine_Remix-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Epic-Thieving-master') Then
+		FileWrite($g_LogFile, '>Epic-Thieving-master\* .' & @CRLF)
+		_Extract_MoveMod('Epic-Thieving-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\A7-GolemConstruction-master') Then
+		FileWrite($g_LogFile, '>A7-GolemConstruction-master\* .' & @CRLF)
+		_Extract_MoveMod('A7-GolemConstruction-master')
+	EndIf
 ; ==============  Fix textstring so weidu will not fail to install the mod ============
 	If StringRegExp($g_Flags[14], 'BWP|BWS') And FileExists($g_BG2Dir&'\setup-bonehillv275.exe') Then
 		$Text=FileRead($g_BG2Dir&'\bonehillv275\Language\deutsch\D\BHARRNES.TRA')
