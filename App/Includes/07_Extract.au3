@@ -703,6 +703,26 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>thisisulb-SpiritwalkerKit-777613d\* .' & @CRLF)
 		_Extract_MoveMod('thisisulb-SpiritwalkerKit-777613d')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\bg2-wildmage-master') Then
+		FileWrite($g_LogFile, '>bg2-wildmage-master\* .' & @CRLF)
+		_Extract_MoveMod('bg2-wildmage-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\thisisulb-SpiritwalkerKit-777613d') Then
+		FileWrite($g_LogFile, '>thisisulb-SpiritwalkerKit-777613d\* .' & @CRLF)
+		_Extract_MoveMod('thisisulb-SpiritwalkerKit-777613d')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\A7-ChaosSorcerer-master') Then
+		FileWrite($g_LogFile, '>A7-ChaosSorcerer-master\* .' & @CRLF)
+		_Extract_MoveMod('A7-ChaosSorcerer-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\DreamWalkerShamanKit') Then
+		FileWrite($g_LogFile, '>DreamWalkerShamanKit\* .' & @CRLF)
+		_Extract_MoveMod('DreamWalkerShamanKit')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\StormCallerKit-master') Then
+		FileWrite($g_LogFile, '>StormCallerKit-master\* .' & @CRLF)
+		_Extract_MoveMod('StormCallerKit-master')
+	EndIf
 ; ==============  Fix textstring so weidu will not fail to install the mod ============
 	If StringRegExp($g_Flags[14], 'BWP|BWS') And FileExists($g_BG2Dir&'\setup-bonehillv275.exe') Then
 		$Text=FileRead($g_BG2Dir&'\bonehillv275\Language\deutsch\D\BHARRNES.TRA')
