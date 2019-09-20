@@ -723,6 +723,18 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>StormCallerKit-master\* .' & @CRLF)
 		_Extract_MoveMod('StormCallerKit-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\A7-recoloredbuttons-master') Then
+		FileWrite($g_LogFile, '>A7-recoloredbuttons-master\* .' & @CRLF)
+		_Extract_MoveMod('A7-recoloredbuttons-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Scales_of_Balance-5.16.3') Then
+		FileWrite($g_LogFile, '>Scales_of_Balance-5.16.3\* .' & @CRLF)
+		_Extract_MoveMod('Scales_of_Balance-5.16.3')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\UnearthedArcana-Might_and_Guile-68c78c7') Then
+		FileWrite($g_LogFile, '>UnearthedArcana-Might_and_Guile-68c78c7\* .' & @CRLF)
+		_Extract_MoveMod('UnearthedArcana-Might_and_Guile-68c78c7')
+	EndIf
 ; ==============  Fix textstring so weidu will not fail to install the mod ============
 	If StringRegExp($g_Flags[14], 'BWP|BWS') And FileExists($g_BG2Dir&'\setup-bonehillv275.exe') Then
 		$Text=FileRead($g_BG2Dir&'\bonehillv275\Language\deutsch\D\BHARRNES.TRA')
