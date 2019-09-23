@@ -575,9 +575,9 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>SoDBanterEET-0.4\* .' & @CRLF)
 		_Extract_MoveMod('SoDBanterEET-0.4')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\SwordCoastStratagems-32.5') Then
-		FileWrite($g_LogFile, '>SwordCoastStratagems-32.5\* .' & @CRLF)
-		_Extract_MoveMod('SwordCoastStratagems-32.5')
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\SwordCoastStratagems-32.6') Then
+		FileWrite($g_LogFile, '>SwordCoastStratagems-32.6\* .' & @CRLF)
+		_Extract_MoveMod('SwordCoastStratagems-32.6')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Tamoko-0.4') Then
 		FileWrite($g_LogFile, '>Tamoko-0.4\* .' & @CRLF)
