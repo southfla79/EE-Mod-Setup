@@ -679,6 +679,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>Epic-Thieving-master\* .' & @CRLF)
 		_Extract_MoveMod('Epic-Thieving-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Geomantic_Sorcerer-master') Then
+		FileWrite($g_LogFile, '>Geomantic_Sorcerer-master\* .' & @CRLF)
+		_Extract_MoveMod('Geomantic_Sorcerer-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Relieve-Wizard-Slayer-master') Then
 		FileWrite($g_LogFile, '>Relieve-Wizard-Slayer-master\* .' & @CRLF)
 		_Extract_MoveMod('Relieve-Wizard-Slayer-master')
@@ -687,9 +691,17 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>A7-GolemConstruction-master\* .' & @CRLF)
 		_Extract_MoveMod('A7-GolemConstruction-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\SpiritHunterShamantKit') Then
+		FileWrite($g_LogFile, '>SpiritHunterShamantKit\* .' & @CRLF)
+		_Extract_MoveMod('SpiritHunterShamantKit')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\LeUI-master') Then
 		FileWrite($g_LogFile, '>LeUI-master\* .' & @CRLF)
 		_Extract_MoveMod('LeUI-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Rupert-master') Then
+		FileWrite($g_LogFile, '>Rupert-master\* .' & @CRLF)
+		_Extract_MoveMod('Rupert-master')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\ItemRevisions-master') Then
 		FileWrite($g_LogFile, '>ItemRevisions-master\* .' & @CRLF)
