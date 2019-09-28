@@ -679,6 +679,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>Epic-Thieving-master\* .' & @CRLF)
 		_Extract_MoveMod('Epic-Thieving-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Relieve-Wizard-Slayer-master') Then
+		FileWrite($g_LogFile, '>Relieve-Wizard-Slayer-master\* .' & @CRLF)
+		_Extract_MoveMod('Relieve-Wizard-Slayer-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\A7-GolemConstruction-master') Then
 		FileWrite($g_LogFile, '>A7-GolemConstruction-master\* .' & @CRLF)
 		_Extract_MoveMod('A7-GolemConstruction-master')
