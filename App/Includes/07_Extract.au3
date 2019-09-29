@@ -703,9 +703,17 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>Rupert-master\* .' & @CRLF)
 		_Extract_MoveMod('Rupert-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\ConvinientAmmunition-1.0') Then
+		FileWrite($g_LogFile, '>ConvinientAmmunition-1.0\* .' & @CRLF)
+		_Extract_MoveMod('ConvinientAmmunition-1.0')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\ItemRevisions-master') Then
 		FileWrite($g_LogFile, '>ItemRevisions-master\* .' & @CRLF)
 		_Extract_MoveMod('ItemRevisions-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Jini Romance - v2.3') Then
+		FileWrite($g_LogFile, '>Jini Romance - v2.3\* .' & @CRLF)
+		_Extract_MoveMod('Jini Romance - v2.3')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Gibberlings3-SpellRevisions-9230f95') Then
 		FileWrite($g_LogFile, '>Gibberlings3-SpellRevisions-9230f95\* .' & @CRLF)
@@ -714,6 +722,10 @@ Func Au3ExFix($p_Num)
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\A7-ImprovedShamanicDance-master') Then
 		FileWrite($g_LogFile, '>A7-ImprovedShamanicDance-master\* .' & @CRLF)
 		_Extract_MoveMod('A7-ImprovedShamanicDance-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\garricks_infatuation-master') Then
+		FileWrite($g_LogFile, '>garricks_infatuation-master\* .' & @CRLF)
+		_Extract_MoveMod('garricks_infatuation-master')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\thisisulb-SpiritwalkerKit-777613d') Then
 		FileWrite($g_LogFile, '>thisisulb-SpiritwalkerKit-777613d\* .' & @CRLF)
@@ -738,6 +750,14 @@ Func Au3ExFix($p_Num)
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\StormCallerKit-master') Then
 		FileWrite($g_LogFile, '>StormCallerKit-master\* .' & @CRLF)
 		_Extract_MoveMod('StormCallerKit-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Sword-and-Fist-master') Then
+		FileWrite($g_LogFile, '>Sword-and-Fist-master\* .' & @CRLF)
+		_Extract_MoveMod('Sword-and-Fist-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\BGEE-Classic-Movies-master') Then
+		FileWrite($g_LogFile, '>BGEE-Classic-Movies-master\* .' & @CRLF)
+		_Extract_MoveMod('BGEE-Classic-Movies-master')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\A7-recoloredbuttons-master') Then
 		FileWrite($g_LogFile, '>A7-recoloredbuttons-master\* .' & @CRLF)
