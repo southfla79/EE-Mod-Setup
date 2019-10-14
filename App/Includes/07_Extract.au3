@@ -783,6 +783,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>A7-TotLM-BG2EE-master\* .' & @CRLF)
 		_Extract_MoveMod('A7-TotLM-BG2EE-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\TomeAndBlood-master') Then
+		FileWrite($g_LogFile, '>TomeAndBlood-master\* .' & @CRLF)
+		_Extract_MoveMod('TomeAndBlood-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\UnearthedArcana-Might_and_Guile-1ff1114') Then
 		FileWrite($g_LogFile, '>UnearthedArcana-Might_and_Guile-1ff1114\* .' & @CRLF)
 		_Extract_MoveMod('UnearthedArcana-Might_and_Guile-1ff1114')
