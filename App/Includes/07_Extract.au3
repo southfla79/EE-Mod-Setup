@@ -787,6 +787,22 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>TomeAndBlood-master\* .' & @CRLF)
 		_Extract_MoveMod('TomeAndBlood-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Ehlastra-master') Then
+		FileWrite($g_LogFile, '>Ehlastra-master\* .' & @CRLF)
+		_Extract_MoveMod('Ehlastra-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Sime-master') Then
+		FileWrite($g_LogFile, '>Sime-master\* .' & @CRLF)
+		_Extract_MoveMod('Sime-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\TurnaboutEE-Master') Then
+		FileWrite($g_LogFile, '>TurnaboutEE-Master\* .' & @CRLF)
+		_Extract_MoveMod('TurnaboutEE-Master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\SOS-EE-master') Then
+		FileWrite($g_LogFile, '>SOS-EE-master\* .' & @CRLF)
+		_Extract_MoveMod('SOS-EE-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\UnearthedArcana-Might_and_Guile-1ff1114') Then
 		FileWrite($g_LogFile, '>UnearthedArcana-Might_and_Guile-1ff1114\* .' & @CRLF)
 		_Extract_MoveMod('UnearthedArcana-Might_and_Guile-1ff1114')
