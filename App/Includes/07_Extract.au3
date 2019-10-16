@@ -803,9 +803,9 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>SOS-EE-master\* .' & @CRLF)
 		_Extract_MoveMod('SOS-EE-master')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\UnearthedArcana-Might_and_Guile-1ff1114') Then
-		FileWrite($g_LogFile, '>UnearthedArcana-Might_and_Guile-1ff1114\* .' & @CRLF)
-		_Extract_MoveMod('UnearthedArcana-Might_and_Guile-1ff1114')
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\UnearthedArcana-Might_and_Guile-0266418') Then
+		FileWrite($g_LogFile, '>UnearthedArcana-Might_and_Guile-0266418\* .' & @CRLF)
+		_Extract_MoveMod('UnearthedArcana-Might_and_Guile-0266418')
 	EndIf
 ; ==============  Fix textstring so weidu will not fail to install the mod ============
 	If StringRegExp($g_Flags[14], 'BWP|BWS') And FileExists($g_BG2Dir&'\setup-bonehillv275.exe') Then
