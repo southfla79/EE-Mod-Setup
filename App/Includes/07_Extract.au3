@@ -803,6 +803,14 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>SOS-EE-master\* .' & @CRLF)
 		_Extract_MoveMod('SOS-EE-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\refinements-4.24') Then
+		FileWrite($g_LogFile, '>refinements-4.24\* .' & @CRLF)
+		_Extract_MoveMod('refinements-4.24')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\bg2-tweaks-and-tricks-master') Then
+		FileWrite($g_LogFile, '>bg2-tweaks-and-tricks-master\* .' & @CRLF)
+		_Extract_MoveMod('bg2-tweaks-and-tricks-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\UnearthedArcana-Might_and_Guile-0266418') Then
 		FileWrite($g_LogFile, '>UnearthedArcana-Might_and_Guile-0266418\* .' & @CRLF)
 		_Extract_MoveMod('UnearthedArcana-Might_and_Guile-0266418')
