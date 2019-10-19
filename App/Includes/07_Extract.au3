@@ -547,6 +547,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>Item_Upgrade-master\* .' & @CRLF)
 		_Extract_MoveMod('Item_Upgrade-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\LensHunt-master') Then
+		FileWrite($g_LogFile, '>LensHunt-master\* .' & @CRLF)
+		_Extract_MoveMod('LensHunt-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\NTotSC-master') Then
 		FileWrite($g_LogFile, '>NTotSC-master\* .' & @CRLF)
 		_Extract_MoveMod('NTotSC-master')
