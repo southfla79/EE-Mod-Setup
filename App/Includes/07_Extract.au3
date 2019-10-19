@@ -535,9 +535,9 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>SOS_EE-master\* .' & @CRLF)
 		_Extract_MoveMod('SOS_EE-master')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\UnearthedArcana-Faiths_and_Powers-44e4f99') Then
-		FileWrite($g_LogFile, '>UnearthedArcana-Faiths_and_Powers-44e4f99\* .' & @CRLF)
-		_Extract_MoveMod('UnearthedArcana-Faiths_and_Powers-44e4f99')
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Faiths_and_Powers-master') Then
+		FileWrite($g_LogFile, '>Faiths_and_Powers-master\* .' & @CRLF)
+		_Extract_MoveMod('Faiths_and_Powers-master')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\SongAndSilence-master') Then
 		FileWrite($g_LogFile, '>SongAndSilence-master\* .' & @CRLF)
