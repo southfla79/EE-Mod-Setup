@@ -643,9 +643,9 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>WheelsOfProphecy-master\* .' & @CRLF)
 		_Extract_MoveMod('WheelsOfProphecy-master')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\XulayeEet-2.1') Then
-		FileWrite($g_LogFile, '>XulayeEet-2.1\* .' & @CRLF)
-		_Extract_MoveMod('XulayeEet-2.1')
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\XulayeEet-2.2') Then
+		FileWrite($g_LogFile, '>XulayeEet-2.2\* .' & @CRLF)
+		_Extract_MoveMod('XulayeEet-2.2')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\jimfix-master') Then
 		FileWrite($g_LogFile, '>jimfix-master\* .' & @CRLF)
