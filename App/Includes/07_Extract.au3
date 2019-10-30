@@ -815,9 +815,9 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>bg2-tweaks-and-tricks-master\* .' & @CRLF)
 		_Extract_MoveMod('bg2-tweaks-and-tricks-master')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\UnearthedArcana-Might_and_Guile-da45d28') Then
-		FileWrite($g_LogFile, '>UnearthedArcana-Might_and_Guile-da45d28\* .' & @CRLF)
-		_Extract_MoveMod('UnearthedArcana-Might_and_Guile-da45d28')
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\UnearthedArcana-Might_and_Guile-0d6ef84') Then
+		FileWrite($g_LogFile, '>UnearthedArcana-Might_and_Guile-0d6ef84\* .' & @CRLF)
+		_Extract_MoveMod('UnearthedArcana-Might_and_Guile-0d6ef84')
 	EndIf
 ; ==============  Fix textstring so weidu will not fail to install the mod ============
 	If StringRegExp($g_Flags[14], 'BWP|BWS') And FileExists($g_BG2Dir&'\setup-bonehillv275.exe') Then
