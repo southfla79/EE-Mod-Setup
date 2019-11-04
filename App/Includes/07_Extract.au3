@@ -403,6 +403,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>Haldamir-master\* .' & @CRLF)
 		_Extract_MoveMod('Haldamir-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\haerdalisromance-master') Then
+		FileWrite($g_LogFile, '>haerdalisromance-master\* .' & @CRLF)
+		_Extract_MoveMod('haerdalisromance-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Angelo-master') Then
 		FileWrite($g_LogFile, '>Angelo-master\* .' & @CRLF)
 		_Extract_MoveMod('Angelo-master')
@@ -550,6 +554,10 @@ Func Au3ExFix($p_Num)
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\rr-master') Then
 		FileWrite($g_LogFile, '>rr-master\* .' & @CRLF)
 		_Extract_MoveMod('rr-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Keldorn_Romance-master') Then
+		FileWrite($g_LogFile, '>Keldorn_Romance-master\* .' & @CRLF)
+		_Extract_MoveMod('Keldorn_Romance-master')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\A7-ImprovedArcher-master') Then
 		FileWrite($g_LogFile, '>A7-ImprovedArcher-master\* .' & @CRLF)
