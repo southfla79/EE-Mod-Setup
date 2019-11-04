@@ -399,9 +399,17 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>Alternatives-master\* .' & @CRLF)
 		_Extract_MoveMod('Alternatives-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Haldamir-master') Then
+		FileWrite($g_LogFile, '>Haldamir-master\* .' & @CRLF)
+		_Extract_MoveMod('Haldamir-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Angelo-master') Then
 		FileWrite($g_LogFile, '>Angelo-master\* .' & @CRLF)
 		_Extract_MoveMod('Angelo-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Corthala_Romantique-master') Then
+		FileWrite($g_LogFile, '>Corthala_Romantique-master\* .' & @CRLF)
+		_Extract_MoveMod('Corthala_Romantique-master')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\ThePictureStandard-master') Then
 		FileWrite($g_LogFile, '>ThePictureStandard-master\* .' & @CRLF)
@@ -735,6 +743,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>Geomantic_Sorcerer-master\* .' & @CRLF)
 		_Extract_MoveMod('Geomantic_Sorcerer-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Bg2Dorn-master') Then
+		FileWrite($g_LogFile, '>Bg2Dorn-master\* .' & @CRLF)
+		_Extract_MoveMod('Bg2Dorn-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Relieve-Wizard-Slayer-master') Then
 		FileWrite($g_LogFile, '>Relieve-Wizard-Slayer-master\* .' & @CRLF)
 		_Extract_MoveMod('Relieve-Wizard-Slayer-master')
@@ -827,6 +839,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>BGEE-Classic-Movies-master\* .' & @CRLF)
 		_Extract_MoveMod('BGEE-Classic-Movies-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\etamin-soundsets-master') Then
+		FileWrite($g_LogFile, '>etamin-soundsets-master\* .' & @CRLF)
+		_Extract_MoveMod('etamin-soundsets-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\A7-recoloredbuttons-master') Then
 		FileWrite($g_LogFile, '>A7-recoloredbuttons-master\* .' & @CRLF)
 		_Extract_MoveMod('A7-recoloredbuttons-master')
@@ -871,9 +887,18 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>ArathEET-master\* .' & @CRLF)
 		_Extract_MoveMod('ArathEET-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Aran-Whitehand-master') Then
+		FileWrite($g_LogFile, '>Aran-Whitehand-master\* .' & @CRLF)
+		_Extract_MoveMod('Aran-Whitehand-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Shadow-Magic-master') Then
 		FileWrite($g_LogFile, '>Shadow-Magic-master\* .' & @CRLF)
 		_Extract_MoveMod('Shadow-Magic-master')
+	EndIf
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\bgee-animus-master') Then
+		FileWrite($g_LogFile, '>bgee-animus-master\* .' & @CRLF)
+		_Extract_MoveMod('bgee-animus-master')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Raduziels-Universal-Wizard-Spells-master') Then
 		FileWrite($g_LogFile, '>Raduziels-Universal-Wizard-Spells-master\* .' & @CRLF)
