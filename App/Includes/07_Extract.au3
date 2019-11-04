@@ -815,6 +815,18 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>refinements-4.24\* .' & @CRLF)
 		_Extract_MoveMod('refinements-4.24')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\ArathEET-master') Then
+		FileWrite($g_LogFile, '>ArathEET-master\* .' & @CRLF)
+		_Extract_MoveMod('ArathEET-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Shadow-Magic-master') Then
+		FileWrite($g_LogFile, '>Shadow-Magic-master\* .' & @CRLF)
+		_Extract_MoveMod('Shadow-Magic-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Raduziels-Universal-Wizard-Spells-master') Then
+		FileWrite($g_LogFile, '>Raduziels-Universal-Wizard-Spells-master\* .' & @CRLF)
+		_Extract_MoveMod('Raduziels-Universal-Wizard-Spells-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\bg2-tweaks-and-tricks-master') Then
 		FileWrite($g_LogFile, '>bg2-tweaks-and-tricks-master\* .' & @CRLF)
 		_Extract_MoveMod('bg2-tweaks-and-tricks-master')
