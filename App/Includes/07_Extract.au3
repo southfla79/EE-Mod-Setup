@@ -903,7 +903,6 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>Shadow-Magic-master\* .' & @CRLF)
 		_Extract_MoveMod('Shadow-Magic-master')
 	EndIf
-	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\bgee-animus-master') Then
 		FileWrite($g_LogFile, '>bgee-animus-master\* .' & @CRLF)
 		_Extract_MoveMod('bgee-animus-master')
