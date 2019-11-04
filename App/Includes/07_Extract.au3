@@ -267,6 +267,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>bg1ub-master\* .' & @CRLF)
 		_Extract_MoveMod('bg1ub-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\BearWalkerKit-master') Then
+		FileWrite($g_LogFile, '>BearWalkerKit-master\* .' & @CRLF)
+		_Extract_MoveMod('BearWalkerKit-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Drake-master') Then
 		FileWrite($g_LogFile, '>Drake-master\* .' & @CRLF)
 		_Extract_MoveMod('Drake-master')
@@ -326,6 +330,10 @@ Func Au3ExFix($p_Num)
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\AjocMod-master') Then
 		FileWrite($g_LogFile, '>AjocMod-master\* .' & @CRLF)
 		_Extract_MoveMod('AjocMod-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\ACBre-master') Then
+		FileWrite($g_LogFile, '>ACBre-master\* .' & @CRLF)
+		_Extract_MoveMod('ACBre-master')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Aura_BG1-master') Then
 		FileWrite($g_LogFile, '>Aura_BG1-master\* .' & @CRLF)
