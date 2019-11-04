@@ -331,6 +331,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>Aura_BG1-master\* .' & @CRLF)
 		_Extract_MoveMod('Aura_BG1-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\METweaks-master') Then
+		FileWrite($g_LogFile, '>METweaks-master\* .' & @CRLF)
+		_Extract_MoveMod('METweaks-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\AzengaardEE-master') Then
 		FileWrite($g_LogFile, '>AzengaardEE-master\* .' & @CRLF)
 		_Extract_MoveMod('AzengaardEE-master')
@@ -507,6 +511,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>Portraits-Portraits-Everywhere-master\* .' & @CRLF)
 		_Extract_MoveMod('Portraits-Portraits-Everywhere-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Portraits-Portraits-Everywhere-master') Then
+		FileWrite($g_LogFile, '>Portraits-Portraits-Everywhere-master\* .' & @CRLF)
+		_Extract_MoveMod('Portraits-Portraits-Everywhere-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\iwdification-master') Then
 		FileWrite($g_LogFile, '>iwdification-master\* .' & @CRLF)
 		_Extract_MoveMod('iwdification-master')
@@ -562,6 +570,10 @@ Func Au3ExFix($p_Num)
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\LensHunt-master') Then
 		FileWrite($g_LogFile, '>LensHunt-master\* .' & @CRLF)
 		_Extract_MoveMod('LensHunt-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\WTPFamiliars-master') Then
+		FileWrite($g_LogFile, '>WTPFamiliars-master\* .' & @CRLF)
+		_Extract_MoveMod('WTPFamiliars-master')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\NTotSC-master') Then
 		FileWrite($g_LogFile, '>NTotSC-master\* .' & @CRLF)
@@ -626,6 +638,10 @@ Func Au3ExFix($p_Num)
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\TowerOfDeception-4.0.1') Then
 		FileWrite($g_LogFile, '>TowerOfDeception-4.0.1\* .' & @CRLF)
 		_Extract_MoveMod('TowerOfDeception-4.0.1')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Pai-Na-NPC-mod-for-BG2-EE-master') Then
+		FileWrite($g_LogFile, '>Pai-Na-NPC-mod-for-BG2-EE-master\* .' & @CRLF)
+		_Extract_MoveMod('Pai-Na-NPC-mod-for-BG2-EE-master')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Tweaks-Anthology-9') Then
 		FileWrite($g_LogFile, '>Tweaks-Anthology-9\* .' & @CRLF)
