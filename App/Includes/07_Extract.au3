@@ -471,6 +471,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>EET_Tweaks-master\* .' & @CRLF)
 		_Extract_MoveMod('EET_Tweaks-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\artaport-master') Then
+		FileWrite($g_LogFile, '>artaport-master\* .' & @CRLF)
+		_Extract_MoveMod('artaport-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Fadingpromises-master') Then
 		FileWrite($g_LogFile, '>Fadingpromises-master\* .' & @CRLF)
 		_Extract_MoveMod('Fadingpromises-master')
@@ -630,6 +634,10 @@ Func Au3ExFix($p_Num)
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\UnfinishedBusiness-master') Then
 		FileWrite($g_LogFile, '>UnfinishedBusiness-master\* .' & @CRLF)
 		_Extract_MoveMod('UnfinishedBusiness-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\iwd_unfinished_business-master') Then
+		FileWrite($g_LogFile, '>iwd_unfinished_business-master\* .' & @CRLF)
+		_Extract_MoveMod('iwd_unfinished_business-master')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\ValenEE-master') Then
 		FileWrite($g_LogFile, '>ValenEE-master\* .' & @CRLF)
