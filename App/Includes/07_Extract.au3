@@ -327,6 +327,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>AjocMod-master\* .' & @CRLF)
 		_Extract_MoveMod('AjocMod-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Aura_BG1-master') Then
+		FileWrite($g_LogFile, '>Aura_BG1-master\* .' & @CRLF)
+		_Extract_MoveMod('Aura_BG1-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\AzengaardEE-master') Then
 		FileWrite($g_LogFile, '>AzengaardEE-master\* .' & @CRLF)
 		_Extract_MoveMod('AzengaardEE-master')
@@ -350,6 +354,10 @@ Func Au3ExFix($p_Num)
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\A7-TestYourMettle-master') Then
 		FileWrite($g_LogFile, '>A7-TestYourMettle-master\* .' & @CRLF)
 		_Extract_MoveMod('A7-TestYourMettle-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\A7-ResizeableCombatLog-master') Then
+		FileWrite($g_LogFile, '>A7-ResizeableCombatLog-master\* .' & @CRLF)
+		_Extract_MoveMod('A7-ResizeableCombatLog-master')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\hiddenadventure-master') Then
 		FileWrite($g_LogFile, '>hiddenadventure-master\* .' & @CRLF)
