@@ -779,6 +779,18 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>Sword-and-Fist-master\* .' & @CRLF)
 		_Extract_MoveMod('Sword-and-Fist-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Charlatan-Kit-master') Then
+		FileWrite($g_LogFile, '>Charlatan-Kit-master\* .' & @CRLF)
+		_Extract_MoveMod('Charlatan-Kit-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Warlock-master') Then
+		FileWrite($g_LogFile, '>Warlock-master\* .' & @CRLF)
+		_Extract_MoveMod('Warlock-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Bardic-Wonders-master') Then
+		FileWrite($g_LogFile, '>Bardic-Wonders-master\* .' & @CRLF)
+		_Extract_MoveMod('Bardic-Wonders-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\BGEE-Classic-Movies-master') Then
 		FileWrite($g_LogFile, '>BGEE-Classic-Movies-master\* .' & @CRLF)
 		_Extract_MoveMod('BGEE-Classic-Movies-master')
