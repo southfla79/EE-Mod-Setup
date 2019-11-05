@@ -359,6 +359,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>Magestronghold-0.3\* .' & @CRLF)
 		_Extract_MoveMod('Magestronghold-0.3')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\MilitiaOfficer-Kit-master') Then
+		FileWrite($g_LogFile, '>MilitiaOfficer-Kit-master\* .' & @CRLF)
+		_Extract_MoveMod('MilitiaOfficer-Kit-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\ImnesvaleEE-master') Then
 		FileWrite($g_LogFile, '>ImnesvaleEE-master\* .' & @CRLF)
 		_Extract_MoveMod('ImnesvaleEE-master')
@@ -826,6 +830,10 @@ Func Au3ExFix($p_Num)
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\StormCallerKit-master') Then
 		FileWrite($g_LogFile, '>StormCallerKit-master\* .' & @CRLF)
 		_Extract_MoveMod('StormCallerKit-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\I-Hate-Undead-Kitpack-master') Then
+		FileWrite($g_LogFile, '>I-Hate-Undead-Kitpack-master\* .' & @CRLF)
+		_Extract_MoveMod('I-Hate-Undead-Kitpack-master')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Sword-and-Fist-master') Then
 		FileWrite($g_LogFile, '>Sword-and-Fist-master\* .' & @CRLF)
