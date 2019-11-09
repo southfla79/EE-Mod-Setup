@@ -511,10 +511,6 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>artaport-master\* .' & @CRLF)
 		_Extract_MoveMod('artaport-master')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Fadingpromises-master') Then
-		FileWrite($g_LogFile, '>Fadingpromises-master\* .' & @CRLF)
-		_Extract_MoveMod('Fadingpromises-master')
-	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\g3anniversary-master') Then
 		FileWrite($g_LogFile, '>g3anniversary-master\* .' & @CRLF)
 		_Extract_MoveMod('g3anniversary-master')
