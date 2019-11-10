@@ -363,6 +363,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>MilitiaOfficer-Kit-master\* .' & @CRLF)
 		_Extract_MoveMod('MilitiaOfficer-Kit-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Mercenary-Kit-master') Then
+		FileWrite($g_LogFile, '>Mercenary-Kit-master\* .' & @CRLF)
+		_Extract_MoveMod('Mercenary-Kit-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\ImnesvaleEE-master') Then
 		FileWrite($g_LogFile, '>ImnesvaleEE-master\* .' & @CRLF)
 		_Extract_MoveMod('ImnesvaleEE-master')
