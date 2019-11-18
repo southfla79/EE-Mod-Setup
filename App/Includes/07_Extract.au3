@@ -431,6 +431,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>Ascension-master\* .' & @CRLF)
 		_Extract_MoveMod('Ascension-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\AngelGryph-MadeInHeaven_ItemPack-d7cbfa5') Then
+		FileWrite($g_LogFile, '>AngelGryph-MadeInHeaven_ItemPack-d7cbfa5\* .' & @CRLF)
+		_Extract_MoveMod('AngelGryph-MadeInHeaven_ItemPack-d7cbfa5')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\ArienaEE-3.0') Then
 		FileWrite($g_LogFile, '>ArienaEE-3.0\* .' & @CRLF)
 		_Extract_MoveMod('ArienaEE-3.0')
@@ -823,9 +827,9 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>A7-ChaosSorcerer-master\* .' & @CRLF)
 		_Extract_MoveMod('A7-ChaosSorcerer-master')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\DreamWalkerShamanKit') Then
-		FileWrite($g_LogFile, '>DreamWalkerShamanKit\* .' & @CRLF)
-		_Extract_MoveMod('DreamWalkerShamanKit')
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\DreamWalkerShamanKit-master') Then
+		FileWrite($g_LogFile, '>DreamWalkerShamanKit-master\* .' & @CRLF)
+		_Extract_MoveMod('DreamWalkerShamanKit-master')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\CrevsDaak-m7multikit-8f0698e') Then
 		FileWrite($g_LogFile, '>CrevsDaak-m7multikit-8f0698e\* .' & @CRLF)
