@@ -27,9 +27,9 @@
 
 ### Supported games ###
 
-- Baldur's Gate: Enhanced Edition (standalone game)
-- Baldur's Gate II: Enhanced Edition (standalone game)
-- Enhanced Edition Trilogy EET( BG1:EE + SoD + BG2:EE )
+- Baldur's Gate: Enhanced Edition (standalone game, v2.3 or later)
+- Baldur's Gate II: Enhanced Edition (standalone game, v2.3 or later)
+- Enhanced Edition Trilogy EET( BG1:EE + SoD + BG2:EE, both games must be v2.5 or later)
 - Planescape: Torment Enhanced Edition
 - Icewind Dale: Enhanced Edition
 
