@@ -351,9 +351,9 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>RoxanneSHS-ToA-f664f19\* .' & @CRLF)
 		_Extract_MoveMod('RoxanneSHS-ToA-f664f19')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\InfinityMods-FishingForTrouble-6ed3896') Then
-		FileWrite($g_LogFile, '>InfinityMods-FishingForTrouble-6ed3896\* .' & @CRLF)
-		_Extract_MoveMod('InfinityMods-FishingForTrouble-6ed3896')
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\FishingForTrouble-3.2.5') Then
+		FileWrite($g_LogFile, '>FishingForTrouble-3.2.5\* .' & @CRLF)
+		_Extract_MoveMod('FishingForTrouble-3.2.5')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Magestronghold-0.3') Then
 		FileWrite($g_LogFile, '>Magestronghold-0.3\* .' & @CRLF)
@@ -431,9 +431,9 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>Ascension-master\* .' & @CRLF)
 		_Extract_MoveMod('Ascension-master')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\AngelGryph-MadeInHeaven_ItemPack-d7cbfa5') Then
-		FileWrite($g_LogFile, '>AngelGryph-MadeInHeaven_ItemPack-d7cbfa5\* .' & @CRLF)
-		_Extract_MoveMod('AngelGryph-MadeInHeaven_ItemPack-d7cbfa5')
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\MadeInHeaven_ItemPack-master') Then
+		FileWrite($g_LogFile, '>MadeInHeaven_ItemPack-master\* .' & @CRLF)
+		_Extract_MoveMod('MadeInHeaven_ItemPack-master')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\ArienaEE-3.0') Then
 		FileWrite($g_LogFile, '>ArienaEE-3.0\* .' & @CRLF)
