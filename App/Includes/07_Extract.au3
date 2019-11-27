@@ -915,9 +915,17 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>ArathEET-master\* .' & @CRLF)
 		_Extract_MoveMod('ArathEET-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\SarevokFriendship-2.5') Then
+		FileWrite($g_LogFile, '>SarevokFriendship-2.5\* .' & @CRLF)
+		_Extract_MoveMod('SarevokFriendship-2.5')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Aran-Whitehand-master') Then
 		FileWrite($g_LogFile, '>Aran-Whitehand-master\* .' & @CRLF)
 		_Extract_MoveMod('Aran-Whitehand-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\MinscFriendship-1.1') Then
+		FileWrite($g_LogFile, '>MinscFriendship-1.1\* .' & @CRLF)
+		_Extract_MoveMod('MinscFriendship-1.1')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\CerndFriendship-1.2') Then
 		FileWrite($g_LogFile, '>CerndFriendship-1.2\* .' & @CRLF)
