@@ -955,6 +955,14 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>bg2-tweaks-and-tricks-master\* .' & @CRLF)
 		_Extract_MoveMod('bg2-tweaks-and-tricks-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\MazzyFriendship-3.3') Then
+		FileWrite($g_LogFile, '>MazzyFriendship-3.3\* .' & @CRLF)
+		_Extract_MoveMod('MazzyFriendship-3.3')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\KorganFriendship-1.4') Then
+		FileWrite($g_LogFile, '>KorganFriendship-1.4\* .' & @CRLF)
+		_Extract_MoveMod('KorganFriendship-1.4')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\UnearthedArcana-Might_and_Guile-0e6c16c') Then
 		FileWrite($g_LogFile, '>UnearthedArcana-Might_and_Guile-0e6c16c\* .' & @CRLF)
 		_Extract_MoveMod('UnearthedArcana-Might_and_Guile-0e6c16c')
