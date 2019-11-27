@@ -879,6 +879,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>A7-TotLM-BG2EE-master\* .' & @CRLF)
 		_Extract_MoveMod('A7-TotLM-BG2EE-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\ViconiaFriendship-4.4') Then
+		FileWrite($g_LogFile, '>ViconiaFriendship-4.4\* .' & @CRLF)
+		_Extract_MoveMod('ViconiaFriendship-4.4')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\TomeAndBlood-master') Then
 		FileWrite($g_LogFile, '>TomeAndBlood-master\* .' & @CRLF)
 		_Extract_MoveMod('TomeAndBlood-master')
@@ -934,6 +938,10 @@ Func Au3ExFix($p_Num)
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Raduziels-Universal-Wizard-Spells-master') Then
 		FileWrite($g_LogFile, '>Raduziels-Universal-Wizard-Spells-master\* .' & @CRLF)
 		_Extract_MoveMod('Raduziels-Universal-Wizard-Spells-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\YoshimoFriendship-4.4') Then
+		FileWrite($g_LogFile, '>YoshimoFriendship-4.4\* .' & @CRLF)
+		_Extract_MoveMod('YoshimoFriendship-4.4')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\bg2-tweaks-and-tricks-master') Then
 		FileWrite($g_LogFile, '>bg2-tweaks-and-tricks-master\* .' & @CRLF)
