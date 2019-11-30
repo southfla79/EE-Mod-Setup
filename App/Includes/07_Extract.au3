@@ -575,9 +575,9 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>Kitanya-Resurrected-master\* .' & @CRLF)
 		_Extract_MoveMod('Kitanya-Resurrected-master')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\LongerRoadEE-1.6.8') Then
-		FileWrite($g_LogFile, '>LongerRoadEE-1.6.8\* .' & @CRLF)
-		_Extract_MoveMod('LongerRoadEE-1.6.8')
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\LongerRoadEE-1.7') Then
+		FileWrite($g_LogFile, '>LongerRoadEE-1.7\* .' & @CRLF)
+		_Extract_MoveMod('LongerRoadEE-1.7')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\NindeEET-master') Then
 		FileWrite($g_LogFile, '>NindeEET-master\* .' & @CRLF)
