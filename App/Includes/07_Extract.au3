@@ -503,9 +503,9 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>DruidGroveMakeover-1.2\* .' & @CRLF)
 		_Extract_MoveMod('DruidGroveMakeover-1.2')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\EdwinEET-master') Then
-		FileWrite($g_LogFile, '>EdwinEET-master\* .' & @CRLF)
-		_Extract_MoveMod('EdwinEET-master')
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Edwin_Romance-2.09') Then
+		FileWrite($g_LogFile, '>Edwin_Romance-2.09\* .' & @CRLF)
+		_Extract_MoveMod('Edwin_Romance-2.09')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\EEUITweaks-3.2') Then
 		FileWrite($g_LogFile, '>EEUITweaks-3.2\* .' & @CRLF)
