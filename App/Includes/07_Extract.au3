@@ -451,6 +451,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>Caelar-1.0\* .' & @CRLF)
 		_Extract_MoveMod('Caelar-1.0')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\The-Rune-master') Then
+		FileWrite($g_LogFile, '>The-Rune-master\* .' & @CRLF)
+		_Extract_MoveMod('The-Rune-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\ChloeEET-1.6_EE') Then
 		FileWrite($g_LogFile, '>ChloeEET-1.6_EE\* .' & @CRLF)
 		_Extract_MoveMod('ChloeEET-1.6_EE')
