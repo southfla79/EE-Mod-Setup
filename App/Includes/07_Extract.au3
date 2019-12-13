@@ -523,6 +523,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>artaport-master\* .' & @CRLF)
 		_Extract_MoveMod('artaport-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\amber-master') Then
+		FileWrite($g_LogFile, '>amber-master\* .' & @CRLF)
+		_Extract_MoveMod('amber-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Rolles-5.0.0') Then
 		FileWrite($g_LogFile, '>Rolles-5.0.0\* .' & @CRLF)
 		_Extract_MoveMod('Rolles-5.0.0')
@@ -983,9 +987,9 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>HaerdalisFriendship-1.1\* .' & @CRLF)
 		_Extract_MoveMod('HaerdalisFriendship-1.1')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\UnearthedArcana-Might_and_Guile-0e6c16c') Then
-		FileWrite($g_LogFile, '>UnearthedArcana-Might_and_Guile-0e6c16c\* .' & @CRLF)
-		_Extract_MoveMod('UnearthedArcana-Might_and_Guile-0e6c16c')
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Might_and_Guile-master') Then
+		FileWrite($g_LogFile, '>Might_and_Guile-master\* .' & @CRLF)
+		_Extract_MoveMod('Might_and_Guile-master')
 	EndIf
 ; ==============  Fix textstring so weidu will not fail to install the mod ============
 	If StringRegExp($g_Flags[14], 'BWP|BWS') And FileExists($g_BG2Dir&'\setup-bonehillv275.exe') Then
