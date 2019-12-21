@@ -811,9 +811,9 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>Jini Romance - v2.3\* .' & @CRLF)
 		_Extract_MoveMod('Jini Romance - v2.3')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Gibberlings3-SpellRevisions-6946fda') Then
-		FileWrite($g_LogFile, '>Gibberlings3-SpellRevisions-6946fda\* .' & @CRLF)
-		_Extract_MoveMod('Gibberlings3-SpellRevisions-6946fda')
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\SpellRevisions-4b18') Then
+		FileWrite($g_LogFile, '>SpellRevisions-4b18\* .' & @CRLF)
+		_Extract_MoveMod('SpellRevisions-4b18')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\A7-ImprovedShamanicDance-master') Then
 		FileWrite($g_LogFile, '>A7-ImprovedShamanicDance-master\* .' & @CRLF)
