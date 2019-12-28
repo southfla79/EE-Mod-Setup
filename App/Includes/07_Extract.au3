@@ -971,6 +971,18 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>bg2-tweaks-and-tricks-master\* .' & @CRLF)
 		_Extract_MoveMod('bg2-tweaks-and-tricks-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Emily-BG1-master') Then
+		FileWrite($g_LogFile, '>Emily-BG1-master\* .' & @CRLF)
+		_Extract_MoveMod('Emily-BG1-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Kale-BG1-master') Then
+		FileWrite($g_LogFile, '>Kale-BG1-master\* .' & @CRLF)
+		_Extract_MoveMod('Kale-BG1-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Vienxay-BG1-master') Then
+		FileWrite($g_LogFile, '>Vienxay-BG1-master\* .' & @CRLF)
+		_Extract_MoveMod('Vienxay-BG1-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\MazzyFriendship-3.3') Then
 		FileWrite($g_LogFile, '>MazzyFriendship-3.3\* .' & @CRLF)
 		_Extract_MoveMod('MazzyFriendship-3.3')
