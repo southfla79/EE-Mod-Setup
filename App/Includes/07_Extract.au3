@@ -495,9 +495,9 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>EET_Expanded_Thief_Stronghold-2.21\* .' & @CRLF)
 		_Extract_MoveMod('EET_Expanded_Thief_Stronghold-2.21')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\DSotSC-master') Then
-		FileWrite($g_LogFile, '>DSotSC-master\* .' & @CRLF)
-		_Extract_MoveMod('DSotSC-master')
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\DSotSC-3.1') Then
+		FileWrite($g_LogFile, '>DSotSC-3.1\* .' & @CRLF)
+		_Extract_MoveMod('DSotSC-3.1')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\DeepgnomesEET-0.3') Then
 		FileWrite($g_LogFile, '>DeepgnomesEET-0.3\* .' & @CRLF)
@@ -778,6 +778,10 @@ Func Au3ExFix($p_Num)
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Bg2Dorn-master') Then
 		FileWrite($g_LogFile, '>Bg2Dorn-master\* .' & @CRLF)
 		_Extract_MoveMod('Bg2Dorn-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\BP-BGT-Worldmap-10.2.4') Then
+		FileWrite($g_LogFile, '>BP-BGT-Worldmap-10.2.4\* .' & @CRLF)
+		_Extract_MoveMod('BP-BGT-Worldmap-10.2.4')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Relieve-Wizard-Slayer-master') Then
 		FileWrite($g_LogFile, '>Relieve-Wizard-Slayer-master\* .' & @CRLF)
