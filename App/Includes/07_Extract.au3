@@ -1019,9 +1019,9 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>IEP_Extended_Banter-5.4\* .' & @CRLF)
 		_Extract_MoveMod('IEP_Extended_Banter-5.4')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\mana_sorcerer-0.2') Then
-		FileWrite($g_LogFile, '>mana_sorcerer-0.2\* .' & @CRLF)
-		_Extract_MoveMod('mana_sorcerer-0.2')
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\mana_sorcerer-0.3') Then
+		FileWrite($g_LogFile, '>mana_sorcerer-0.3\* .' & @CRLF)
+		_Extract_MoveMod('mana_sorcerer-0.3')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\HaerdalisFriendship-1.1') Then
 		FileWrite($g_LogFile, '>HaerdalisFriendship-1.1\* .' & @CRLF)
