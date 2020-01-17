@@ -323,9 +323,9 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>Indira_NPC-master\* .' & @CRLF)
 		_Extract_MoveMod('Indira_NPC-master')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\EET-1.0RC12.1') Then
-		FileWrite($g_LogFile, '>EET-1.0RC12.1\* .' & @CRLF)
-		_Extract_MoveMod('EET-1.0RC12.1')
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\EET-1.0RC12.2') Then
+		FileWrite($g_LogFile, '>EET-1.0RC12.2\* .' & @CRLF)
+		_Extract_MoveMod('EET-1.0RC12.2')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\AC_QUEST-master') Then
 		FileWrite($g_LogFile, '>AC_QUEST-master\* .' & @CRLF)
