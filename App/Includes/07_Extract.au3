@@ -287,9 +287,9 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>Sirene-NPC-master\* .' & @CRLF)
 		_Extract_MoveMod('Sirene-NPC-master')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\BG1NPC-24.0-beta') Then
-		FileWrite($g_LogFile, '>BG1NPC-24.0-beta\* .' & @CRLF)
-		_Extract_MoveMod('BG1NPC-24.0-beta')
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\BG1NPC-24.1') Then
+		FileWrite($g_LogFile, '>BG1NPC-24.1\* .' & @CRLF)
+		_Extract_MoveMod('BG1NPC-24.1')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\bg1npcmusic-master') Then
 		FileWrite($g_LogFile, '>bg1npcmusic-master\* .' & @CRLF)
