@@ -559,9 +559,9 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>Portraits-Portraits-Everywhere-master\* .' & @CRLF)
 		_Extract_MoveMod('Portraits-Portraits-Everywhere-master')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Portraits-Portraits-Everywhere-master') Then
-		FileWrite($g_LogFile, '>Portraits-Portraits-Everywhere-master\* .' & @CRLF)
-		_Extract_MoveMod('Portraits-Portraits-Everywhere-master')
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Imoen4Ever-3') Then
+		FileWrite($g_LogFile, '>Imoen4Ever-3\* .' & @CRLF)
+		_Extract_MoveMod('Imoen4Ever-3')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\iwdification-master') Then
 		FileWrite($g_LogFile, '>iwdification-master\* .' & @CRLF)
@@ -971,9 +971,9 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>ValygarFriendship-1.3\* .' & @CRLF)
 		_Extract_MoveMod('ValygarFriendship-1.3')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\EndlessBG1-1') Then
-		FileWrite($g_LogFile, '>EndlessBG1-1\* .' & @CRLF)
-		_Extract_MoveMod('EndlessBG1-1')
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\EndlessBG1-2.1') Then
+		FileWrite($g_LogFile, '>EndlessBG1-2.1\* .' & @CRLF)
+		_Extract_MoveMod('EndlessBG1-2.1')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\bgee-animus-master') Then
 		FileWrite($g_LogFile, '>bgee-animus-master\* .' & @CRLF)
