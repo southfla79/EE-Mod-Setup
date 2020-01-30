@@ -803,6 +803,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>LeUI-master\* .' & @CRLF)
 		_Extract_MoveMod('LeUI-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\LeUI-BG1EE-master') Then
+		FileWrite($g_LogFile, '>LeUI-BG1EE-master\* .' & @CRLF)
+		_Extract_MoveMod('LeUI-BG1EE-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\LeUI-SoD-master') Then
 		FileWrite($g_LogFile, '>LeUI-SpD-master\* .' & @CRLF)
 		_Extract_MoveMod('LeUI-SoD-master')
