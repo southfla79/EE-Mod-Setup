@@ -811,6 +811,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>LeUI-SpD-master\* .' & @CRLF)
 		_Extract_MoveMod('LeUI-SoD-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\BG_Quests_And_Encounters-master') Then
+		FileWrite($g_LogFile, '>BG_Quests_And_Encounters-master\* .' & @CRLF)
+		_Extract_MoveMod('BG_Quests_And_Encounters-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Rupert-master') Then
 		FileWrite($g_LogFile, '>Rupert-master\* .' & @CRLF)
 		_Extract_MoveMod('Rupert-master')
