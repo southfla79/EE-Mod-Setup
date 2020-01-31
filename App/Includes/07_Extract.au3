@@ -531,6 +531,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>artaport-master\* .' & @CRLF)
 		_Extract_MoveMod('artaport-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Ajantis_BG1_Expansion-14') Then
+		FileWrite($g_LogFile, '>Ajantis_BG1_Expansion-14\* .' & @CRLF)
+		_Extract_MoveMod('Ajantis_BG1_Expansion-14')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\amber-master') Then
 		FileWrite($g_LogFile, '>amber-master\* .' & @CRLF)
 		_Extract_MoveMod('amber-master')
