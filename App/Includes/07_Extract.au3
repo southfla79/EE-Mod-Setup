@@ -267,6 +267,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>bg1ub-master\* .' & @CRLF)
 		_Extract_MoveMod('bg1ub-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\CandlekeepMemories-master') Then
+		FileWrite($g_LogFile, '>CandlekeepMemories-master\* .' & @CRLF)
+		_Extract_MoveMod('CandlekeepMemories-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\BearWalkerKit-master') Then
 		FileWrite($g_LogFile, '>BearWalkerKit-master\* .' & @CRLF)
 		_Extract_MoveMod('BearWalkerKit-master')
