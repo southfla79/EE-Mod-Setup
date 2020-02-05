@@ -283,6 +283,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>Velvetfoot-master\* .' & @CRLF)
 		_Extract_MoveMod('Velvetfoot-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\SpeakDead-master') Then
+		FileWrite($g_LogFile, '>SpeakDead-master\* .' & @CRLF)
+		_Extract_MoveMod('SpeakDead-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\BearWalkerKit-master') Then
 		FileWrite($g_LogFile, '>BearWalkerKit-master\* .' & @CRLF)
 		_Extract_MoveMod('BearWalkerKit-master')
