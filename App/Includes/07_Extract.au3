@@ -291,6 +291,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>MalteseArtefact-master\* .' & @CRLF)
 		_Extract_MoveMod('MalteseArtefact-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\CivilDisobedience-master') Then
+		FileWrite($g_LogFile, '>CivilDisobedience-master\* .' & @CRLF)
+		_Extract_MoveMod('CivilDisobedience-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\BearWalkerKit-master') Then
 		FileWrite($g_LogFile, '>BearWalkerKit-master\* .' & @CRLF)
 		_Extract_MoveMod('BearWalkerKit-master')
