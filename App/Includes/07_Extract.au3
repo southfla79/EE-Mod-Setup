@@ -1059,9 +1059,9 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>Helga-BG1-master\* .' & @CRLF)
 		_Extract_MoveMod('Helga-BG1-master')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\MazzyFriendship-3.3') Then
-		FileWrite($g_LogFile, '>MazzyFriendship-3.3\* .' & @CRLF)
-		_Extract_MoveMod('MazzyFriendship-3.3')
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\MazzyFriendship-3.5') Then
+		FileWrite($g_LogFile, '>MazzyFriendship-3.5\* .' & @CRLF)
+		_Extract_MoveMod('MazzyFriendship-3.5')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\ImoenFriendship-3.4') Then
 		FileWrite($g_LogFile, '>ImoenFriendship-3.4\* .' & @CRLF)
