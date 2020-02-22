@@ -891,9 +891,9 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>thisisulb-SpiritwalkerKit-777613d\* .' & @CRLF)
 		_Extract_MoveMod('thisisulb-SpiritwalkerKit-777613d')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\bg2-wildmage-master') Then
-		FileWrite($g_LogFile, '>bg2-wildmage-master\* .' & @CRLF)
-		_Extract_MoveMod('bg2-wildmage-master')
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\bg2-wildmage-2') Then
+		FileWrite($g_LogFile, '>bg2-wildmage-2\* .' & @CRLF)
+		_Extract_MoveMod('bg2-wildmage-2')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\thisisulb-SpiritwalkerKit-777613d') Then
 		FileWrite($g_LogFile, '>thisisulb-SpiritwalkerKit-777613d\* .' & @CRLF)
