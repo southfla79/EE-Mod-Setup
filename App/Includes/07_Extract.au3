@@ -527,9 +527,9 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>DaceEET-master\* .' & @CRLF)
 		_Extract_MoveMod('DaceEET-master')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\CtB-EE-master') Then
-		FileWrite($g_LogFile, '>CtB-EE-master\* .' & @CRLF)
-		_Extract_MoveMod('CtB-EE-master')
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Check_the_Bodies-3.0') Then
+		FileWrite($g_LogFile, '>Check_the_Bodies-3.0\* .' & @CRLF)
+		_Extract_MoveMod('Check_the_Bodies-3.0')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\EET_Fixpack-master') Then
 		FileWrite($g_LogFile, '>EET_Fixpack-master\* .' & @CRLF)
@@ -594,6 +594,10 @@ Func Au3ExFix($p_Num)
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Gavin_BG2-master') Then
 		FileWrite($g_LogFile, '>Gavin_BG2-master\* .' & @CRLF)
 		_Extract_MoveMod('Gavin_BG2-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Hlondeth-master') Then
+		FileWrite($g_LogFile, '>Hlondeth-master\* .' & @CRLF)
+		_Extract_MoveMod('Hlondeth-master')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\AstroBryGuy-JaheiraRecast-501290c') Then
 		FileWrite($g_LogFile, '>AstroBryGuy-JaheiraRecast-501290c\* .' & @CRLF)
