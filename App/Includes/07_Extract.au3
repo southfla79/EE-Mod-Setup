@@ -1039,6 +1039,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>bgee-animus-master\* .' & @CRLF)
 		_Extract_MoveMod('bgee-animus-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Adrian_NPC-5.0') Then
+		FileWrite($g_LogFile, '>Adrian_NPC-5.0\* .' & @CRLF)
+		_Extract_MoveMod('Adrian_NPC-5.0')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Raduziels-Universal-Wizard-Spells-master') Then
 		FileWrite($g_LogFile, '>Raduziels-Universal-Wizard-Spells-master\* .' & @CRLF)
 		_Extract_MoveMod('Raduziels-Universal-Wizard-Spells-master')
