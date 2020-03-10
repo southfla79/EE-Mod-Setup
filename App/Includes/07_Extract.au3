@@ -951,9 +951,9 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>A7-recoloredbuttons-master\* .' & @CRLF)
 		_Extract_MoveMod('A7-recoloredbuttons-master')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Scales_of_Balance-5.19') Then
-		FileWrite($g_LogFile, '>Scales_of_Balance-5.19\* .' & @CRLF)
-		_Extract_MoveMod('Scales_of_Balance-5.19')
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Scales_of_Balance-5.21') Then
+		FileWrite($g_LogFile, '>Scales_of_Balance-5.21\* .' & @CRLF)
+		_Extract_MoveMod('Scales_of_Balance-5.21')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\A7-TotLM-BG2EE-master') Then
 		FileWrite($g_LogFile, '>A7-TotLM-BG2EE-master\* .' & @CRLF)
