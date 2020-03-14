@@ -763,6 +763,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>iwd_unfinished_business-master\* .' & @CRLF)
 		_Extract_MoveMod('iwd_unfinished_business-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\The-Artisan-s-Kitpack-master') Then
+		FileWrite($g_LogFile, '>The-Artisan-s-Kitpack-master\* .' & @CRLF)
+		_Extract_MoveMod('The-Artisan-s-Kitpack-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\ValenEE-master') Then
 		FileWrite($g_LogFile, '>ValenEE-master\* .' & @CRLF)
 		_Extract_MoveMod('ValenEE-master')
