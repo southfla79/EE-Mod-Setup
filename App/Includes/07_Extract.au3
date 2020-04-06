@@ -323,6 +323,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>Sirene-NPC-master\* .' & @CRLF)
 		_Extract_MoveMod('Sirene-NPC-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Kim_Pirate-master') Then
+		FileWrite($g_LogFile, '>Kim_Pirate-master\* .' & @CRLF)
+		_Extract_MoveMod('Kim_Pirate-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\HaveIce-master') Then
 		FileWrite($g_LogFile, '>HaveIce-master\* .' & @CRLF)
 		_Extract_MoveMod('HaveIce-master')
