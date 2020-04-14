@@ -355,6 +355,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>TheSwordofNoober-2.0.0\* .' & @CRLF)
 		_Extract_MoveMod('TheSwordofNoober-2.0.0')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\NoSoDSound-master') Then
+		FileWrite($g_LogFile, '>NoSoDSound-master\* .' & @CRLF)
+		_Extract_MoveMod('NoSoDSound-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\CowledMenace-master') Then
 		FileWrite($g_LogFile, '>CowledMenace-master\* .' & @CRLF)
 		_Extract_MoveMod('CowledMenace-master')
