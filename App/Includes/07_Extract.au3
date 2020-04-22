@@ -723,6 +723,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>Saerileth-master\* .' & @CRLF)
 		_Extract_MoveMod('Saerileth-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\SafanaBG2-master') Then
+		FileWrite($g_LogFile, '>SafanaBG2-master\* .' & @CRLF)
+		_Extract_MoveMod('SafanaBG2-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Sirene-NPC-for-BG2-EE-master') Then
 		FileWrite($g_LogFile, '>Sirene-NPC-for-BG2-EE-master\* .' & @CRLF)
 		_Extract_MoveMod('Sirene-NPC-for-BG2-EE-master')
