@@ -403,9 +403,9 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>Aura_BG1-master\* .' & @CRLF)
 		_Extract_MoveMod('Aura_BG1-master')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\METweaks-master') Then
-		FileWrite($g_LogFile, '>METweaks-master\* .' & @CRLF)
-		_Extract_MoveMod('METweaks-master')
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Olvyn-Tweaks-master') Then
+		FileWrite($g_LogFile, '>Olvyn-Tweaks-master\* .' & @CRLF)
+		_Extract_MoveMod('Olvyn-Tweaks-master')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\AzengaardEE-master') Then
 		FileWrite($g_LogFile, '>AzengaardEE-master\* .' & @CRLF)
