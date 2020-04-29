@@ -751,9 +751,9 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>Tamoko-0.4\* .' & @CRLF)
 		_Extract_MoveMod('Tamoko-0.4')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\TDDz-1.3') Then
-		FileWrite($g_LogFile, '>TDDz-1.3\* .' & @CRLF)
-		_Extract_MoveMod('TDDz-1.3')
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\TDDz-1.4') Then
+		FileWrite($g_LogFile, '>TDDz-1.4\* .' & @CRLF)
+		_Extract_MoveMod('TDDz-1.4')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\TGC1e-master') Then
 		FileWrite($g_LogFile, '>TGC1e-master\* .' & @CRLF)
