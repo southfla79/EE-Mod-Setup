@@ -839,9 +839,9 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>Kivan_and_Deheriana-master\* .' & @CRLF)
 		_Extract_MoveMod('Kivan_and_Deheriana-master')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Gibberlings3-Anishai-d8ea3dc') Then
-		FileWrite($g_LogFile, '>Gibberlings3-Anishai-d8ea3dc\* .' & @CRLF)
-		_Extract_MoveMod('Gibberlings3-Anishai-d8ea3dc')
+	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\Gibberlings3-Anishai-c1368e4') Then
+		FileWrite($g_LogFile, '>Gibberlings3-Anishai-c1368e4\* .' & @CRLF)
+		_Extract_MoveMod('Gibberlings3-Anishai-c1368e4')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWP|BWS|BG1EE|BG2EE|PSTEE') And FileExists($g_GameDir&'\GwendolyneFreddy-butchery-d7d154c') Then
 		FileWrite($g_LogFile, '>GwendolyneFreddy-butchery-d7d154c\* .' & @CRLF)
