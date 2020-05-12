@@ -1003,6 +1003,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>A7-recoloredbuttons-master\* .' & @CRLF)
 		_Extract_MoveMod('A7-recoloredbuttons-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWS|BG1EE|BG2EE|PSTEE|IWD1EE') And FileExists($g_GameDir&'\subtledoctor-EE_APR_Fix-1c6057b') Then
+		FileWrite($g_LogFile, '>subtledoctor-EE_APR_Fix-1c6057b\* .' & @CRLF)
+		_Extract_MoveMod('subtledoctor-EE_APR_Fix-1c6057b')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWS|BG1EE|BG2EE|PSTEE|IWD1EE') And FileExists($g_GameDir&'\Scales_of_Balance-5.21') Then
 		FileWrite($g_LogFile, '>Scales_of_Balance-5.21\* .' & @CRLF)
 		_Extract_MoveMod('Scales_of_Balance-5.21')
