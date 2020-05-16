@@ -1015,6 +1015,14 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>Continuous_NPC_Portraits-1\* .' & @CRLF)
 		_Extract_MoveMod('Continuous_NPC_Portraits-1')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWS|BG1EE|BG2EE|PSTEE|IWD1EE') And FileExists($g_GameDir&'\KarihiNPC-master') Then
+		FileWrite($g_LogFile, '>KarihiNPC-master\* .' & @CRLF)
+		_Extract_MoveMod('KarihiNPC-master')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWS|BG1EE|BG2EE|PSTEE|IWD1EE') And FileExists($g_GameDir&'\MinervaNPC-master') Then
+		FileWrite($g_LogFile, '>MinervaNPC-master\* .' & @CRLF)
+		_Extract_MoveMod('MinervaNPC-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWS|BG1EE|BG2EE|PSTEE|IWD1EE') And FileExists($g_GameDir&'\A7-TotLM-BG2EE-master') Then
 		FileWrite($g_LogFile, '>A7-TotLM-BG2EE-master\* .' & @CRLF)
 		_Extract_MoveMod('A7-TotLM-BG2EE-master')
