@@ -455,9 +455,9 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>hiddenadventure-master\* .' & @CRLF)
 		_Extract_MoveMod('hiddenadventure-master')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWS|BG1EE|BG2EE|PSTEE|IWD1EE') And FileExists($g_GameDir&'\d5_Random_Tweaks-0.3') Then
-		FileWrite($g_LogFile, '>d5_Random_Tweaks-0.3\* .' & @CRLF)
-		_Extract_MoveMod('d5_Random_Tweaks-0.3')
+	If StringRegExp($g_Flags[14], 'BWS|BG1EE|BG2EE|PSTEE|IWD1EE') And FileExists($g_GameDir&'\d5_Random_Tweaks-0.5') Then
+		FileWrite($g_LogFile, '>d5_Random_Tweaks-0.5\* .' & @CRLF)
+		_Extract_MoveMod('d5_Random_Tweaks-0.5')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWS|BG1EE|BG2EE|PSTEE|IWD1EE') And FileExists($g_GameDir&'\A7-LightingPackEE-master') Then
 		FileWrite($g_LogFile, '>A7-LightingPackEE-master\* .' & @CRLF)
@@ -1007,9 +1007,9 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>subtledoctor-EE_APR_Fix-1c6057b\* .' & @CRLF)
 		_Extract_MoveMod('subtledoctor-EE_APR_Fix-1c6057b')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWS|BG1EE|BG2EE|PSTEE|IWD1EE') And FileExists($g_GameDir&'\Scales_of_Balance-5.21') Then
-		FileWrite($g_LogFile, '>Scales_of_Balance-5.21\* .' & @CRLF)
-		_Extract_MoveMod('Scales_of_Balance-5.21')
+	If StringRegExp($g_Flags[14], 'BWS|BG1EE|BG2EE|PSTEE|IWD1EE') And FileExists($g_GameDir&'\Scales_of_Balance-5.22') Then
+		FileWrite($g_LogFile, '>Scales_of_Balance-5.22\* .' & @CRLF)
+		_Extract_MoveMod('Scales_of_Balance-5.22')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWS|BG1EE|BG2EE|PSTEE|IWD1EE') And FileExists($g_GameDir&'\A7-TotLM-BG2EE-master') Then
 		FileWrite($g_LogFile, '>A7-TotLM-BG2EE-master\* .' & @CRLF)
@@ -1143,9 +1143,9 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>IEP_Extended_Banter-5.4\* .' & @CRLF)
 		_Extract_MoveMod('IEP_Extended_Banter-5.4')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWS|BG1EE|BG2EE|PSTEE|IWD1EE') And FileExists($g_GameDir&'\mana_sorcerer-0.3') Then
-		FileWrite($g_LogFile, '>mana_sorcerer-0.3\* .' & @CRLF)
-		_Extract_MoveMod('mana_sorcerer-0.3')
+	If StringRegExp($g_Flags[14], 'BWS|BG1EE|BG2EE|PSTEE|IWD1EE') And FileExists($g_GameDir&'\mana_sorcerer-0.4.1') Then
+		FileWrite($g_LogFile, '>mana_sorcerer-0.4.1\* .' & @CRLF)
+		_Extract_MoveMod('mana_sorcerer-0.4.1')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWS|BG1EE|BG2EE|PSTEE|IWD1EE') And FileExists($g_GameDir&'\HaerdalisFriendship-1.1') Then
 		FileWrite($g_LogFile, '>HaerdalisFriendship-1.1\* .' & @CRLF)
