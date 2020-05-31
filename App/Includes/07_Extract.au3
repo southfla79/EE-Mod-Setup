@@ -1147,9 +1147,9 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>ImoenFriendship-3.4\* .' & @CRLF)
 		_Extract_MoveMod('ImoenFriendship-3.4')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWS|BG1EE|BG2EE|PSTEE|IWD1EE') And FileExists($g_GameDir&'\KorganFriendship-1.4') Then
-		FileWrite($g_LogFile, '>KorganFriendship-1.4\* .' & @CRLF)
-		_Extract_MoveMod('KorganFriendship-1.4')
+	If StringRegExp($g_Flags[14], 'BWS|BG1EE|BG2EE|PSTEE|IWD1EE') And FileExists($g_GameDir&'\KorganFriendship-1.6') Then
+		FileWrite($g_LogFile, '>KorganFriendship-1.6\* .' & @CRLF)
+		_Extract_MoveMod('KorganFriendship-1.6')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWS|BG1EE|BG2EE|PSTEE|IWD1EE') And FileExists($g_GameDir&'\IEP_Extended_Banter-5.4') Then
 		FileWrite($g_LogFile, '>IEP_Extended_Banter-5.4\* .' & @CRLF)
