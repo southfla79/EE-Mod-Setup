@@ -1163,6 +1163,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>TheSlitheringMenace-4.0.0\* .' & @CRLF)
 		_Extract_MoveMod('TheSlitheringMenace-4.0.0')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWS|BG1EE|BG2EE|PSTEE|IWD1EE') And FileExists($g_GameDir&'\HeartOfTheWood-7.0.0') Then
+		FileWrite($g_LogFile, '>HeartOfTheWood-7.0.0\* .' & @CRLF)
+		_Extract_MoveMod('HeartOfTheWood-7.0.0')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWS|BG1EE|BG2EE|PSTEE|IWD1EE') And FileExists($g_GameDir&'\HaerdalisFriendship-1.1') Then
 		FileWrite($g_LogFile, '>HaerdalisFriendship-1.1\* .' & @CRLF)
 		_Extract_MoveMod('HaerdalisFriendship-1.1')
