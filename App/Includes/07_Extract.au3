@@ -591,9 +591,13 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>EEUITweaks-3.5\* .' & @CRLF)
 		_Extract_MoveMod('EEUITweaks-3.5')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWS|BG1EE|BG2EE|PSTEE|IWD1EE') And FileExists($g_GameDir&'\EET_Tweaks-master') Then
-		FileWrite($g_LogFile, '>EET_Tweaks-master\* .' & @CRLF)
-		_Extract_MoveMod('EET_Tweaks-master')
+	If StringRegExp($g_Flags[14], 'BWS|BG1EE|BG2EE|PSTEE|IWD1EE') And FileExists($g_GameDir&'\EEUITweaks-3.5') Then
+		FileWrite($g_LogFile, '>EEUITweaks-3.5\* .' & @CRLF)
+		_Extract_MoveMod('EEUITweaks-3.5')
+	EndIf
+	If StringRegExp($g_Flags[14], 'BWS|BG1EE|BG2EE|PSTEE|IWD1EE') And FileExists($g_GameDir&'\Baldurs-gate-dnd-3.5-2.16.5') Then
+		FileWrite($g_LogFile, '>Baldurs-gate-dnd-3.5-2.16.5\* .' & @CRLF)
+		_Extract_MoveMod('Baldurs-gate-dnd-3.5-2.16.5')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWS|BG1EE|BG2EE|PSTEE|IWD1EE') And FileExists($g_GameDir&'\artaport-master') Then
 		FileWrite($g_LogFile, '>artaport-master\* .' & @CRLF)
