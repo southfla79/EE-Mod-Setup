@@ -571,9 +571,9 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>DSotSC-3.2\* .' & @CRLF)
 		_Extract_MoveMod('DSotSC-3.2')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWS|BG1EE|BG2EE|PSTEE|IWD1EE') And FileExists($g_GameDir&'\DeepgnomesEET-0.3') Then
-		FileWrite($g_LogFile, '>DeepgnomesEET-0.3\* .' & @CRLF)
-		_Extract_MoveMod('DeepgnomesEET-0.3')
+	If StringRegExp($g_Flags[14], 'BWS|BG1EE|BG2EE|PSTEE|IWD1EE') And FileExists($g_GameDir&'\DeepgnomesEET-0.4') Then
+		FileWrite($g_LogFile, '>DeepgnomesEET-0.4\* .' & @CRLF)
+		_Extract_MoveMod('DeepgnomesEET-0.4')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWS|BG1EE|BG2EE|PSTEE|IWD1EE') And FileExists($g_GameDir&'\DjinniCompanion-master') Then
 		FileWrite($g_LogFile, '>DjinniCompanion-master\* .' & @CRLF)
