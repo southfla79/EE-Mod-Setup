@@ -407,6 +407,10 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>DarkHorizonsTweaks-master\* .' & @CRLF)
 		_Extract_MoveMod('DarkHorizonsTweaks-master')
 	EndIf
+	If StringRegExp($g_Flags[14], 'BWS|BG1EE|BG2EE|PSTEE|IWD1EE') And FileExists($g_GameDir&'\EET_Tweaks-master') Then
+		FileWrite($g_LogFile, '>EET_Tweaks-master\* .' & @CRLF)
+		_Extract_MoveMod('EET_Tweaks-master')
+	EndIf
 	If StringRegExp($g_Flags[14], 'BWS|BG1EE|BG2EE|PSTEE|IWD1EE') And FileExists($g_GameDir&'\Olvyn-Tweaks-master') Then
 		FileWrite($g_LogFile, '>Olvyn-Tweaks-master\* .' & @CRLF)
 		_Extract_MoveMod('Olvyn-Tweaks-master')
@@ -911,9 +915,9 @@ Func Au3ExFix($p_Num)
 		FileWrite($g_LogFile, '>A7-GolemConstruction-master\* .' & @CRLF)
 		_Extract_MoveMod('A7-GolemConstruction-master')
 	EndIf
-	If StringRegExp($g_Flags[14], 'BWS|BG1EE|BG2EE|PSTEE|IWD1EE') And FileExists($g_GameDir&'\SpiritHunterShamantKit') Then
-		FileWrite($g_LogFile, '>SpiritHunterShamantKit\* .' & @CRLF)
-		_Extract_MoveMod('SpiritHunterShamantKit')
+	If StringRegExp($g_Flags[14], 'BWS|BG1EE|BG2EE|PSTEE|IWD1EE') And FileExists($g_GameDir&'\SpiritHunterShamantKit-master') Then
+		FileWrite($g_LogFile, '>SpiritHunterShamantKit-master\* .' & @CRLF)
+		_Extract_MoveMod('SpiritHunterShamantKit-master')
 	EndIf
 	If StringRegExp($g_Flags[14], 'BWS|BG1EE|BG2EE|PSTEE|IWD1EE') And FileExists($g_GameDir&'\LeUI-master') Then
 		FileWrite($g_LogFile, '>LeUI-master\* .' & @CRLF)
